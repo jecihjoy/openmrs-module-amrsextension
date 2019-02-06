@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                  http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+    <changeSet id="patienttodos-2019-05-25-15:4080080060" author="jecihjoy">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="patienttodos"/>
+            </not>
+        </preConditions>
+        <comment>
+            Creating the basic module table
+        </comment>
+
+        <createTable tableName="patienttodos">
+            <column name="todo_id" autoIncrement="true" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+
+            <column name="description" type="varchar(255)">
+            </column>
+            <column name="todo_date" type="DATE">
+            </column>
+            <column name="patient_id" type="int">
+            </column>
+        </createTable>
+        <addForeignKeyConstraint constraintName="todosPK"
+                                 baseTableName="patienttodos" baseColumnNames="patient_id"
+                                 referencedTableName="patient" referencedColumnNames="patient_id"/>
+
+    </changeSet>
+</databaseChangeLog>

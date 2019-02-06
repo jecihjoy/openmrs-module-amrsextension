@@ -1,0 +1,6 @@
+F:\testapps\patienttodo\patienttodos\api\src\main\java\org\openmrs\module\patienttodos\api\db\PatientTodoDao.java
+F:\testapps\patienttodo\patienttodos\api\src\main\java\org\openmrs\module\patienttodos\models\PatientTodo.java
+F:\testapps\patienttodo\patienttodos\api\src\main\java\org\openmrs\module\patienttodos\api\db\hibernate\HibernatePatientTodoDao.java
+F:\testapps\patienttodo\patienttodos\api\src\main\java\org\openmrs\module\patienttodos\api\services\impl\PatientTodosServiceImpl.java
+F:\testapps\patienttodo\patienttodos\api\src\main\java\org\openmrs\module\patienttodos\PatienttodosActivator.java
+F:\testapps\patienttodo\patienttodos\api\src\main\java\org\openmrs\module\patienttodos\api\services\PatientTodosService.java

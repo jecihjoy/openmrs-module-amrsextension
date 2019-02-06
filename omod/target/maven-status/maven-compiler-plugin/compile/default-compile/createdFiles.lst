@@ -1,0 +1,3 @@
+org\openmrs\module\patienttodos\web\controller\PatienttodosController.class
+org\openmrs\module\patienttodos\web\resources\PatientTodosResource.class
+org\openmrs\module\patienttodos\extension\html\AdminList.class
