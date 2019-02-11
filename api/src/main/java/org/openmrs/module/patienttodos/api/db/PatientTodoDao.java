@@ -5,7 +5,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository("patienttodos.PatientTodoDao")
 public interface PatientTodoDao {
 	
 	List<PatientTodo> getAllTodos();

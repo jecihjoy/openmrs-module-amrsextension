@@ -2,7 +2,6 @@ package org.openmrs.module.patienttodos.web.resources;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.openmrs.Patient;
 import org.openmrs.api.context.Context;
 import org.openmrs.module.patienttodos.api.services.PatientTodosService;
 import org.openmrs.module.patienttodos.models.PatientTodo;
@@ -18,10 +17,7 @@ import org.openmrs.module.webservices.rest.web.resource.impl.DataDelegatingCrudR
 import org.openmrs.module.webservices.rest.web.resource.impl.DelegatingResourceDescription;
 import org.openmrs.module.webservices.rest.web.resource.impl.NeedsPaging;
 import org.openmrs.module.webservices.rest.web.response.ResponseException;
-import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @Resource(name = RestConstants.VERSION_1 + PatienttodosController.PATIENT_TODOS_NAMESPACE + "/ptodos", supportedClass = PatientTodo.class, supportedOpenmrsVersions = { "2.0.*, 2.1.*, 2.4.*, 2.8.*" })
@@ -29,12 +25,23 @@ public class PatientTodosResource extends DataDelegatingCrudResource<PatientTodo
 	
 	private static final Log log = LogFactory.getLog(PatientTodosResource.class);
 	
-	@Autowired
 	private PatientTodosService service;
 	
 	@Override
 	public PatientTodo getByUniqueId(String patientUuid) {
-		return service.getPatientTodos(patientUuid);
+		service = Context.getService(PatientTodosService.class);
+		return service.getPatientTodos(Integer.parseInt(patientUuid));
+	}
+	
+	/*	@Override
+		public PatientTodo getByUniqueId(String patientUuid) {
+			service = Context.getService(PatientTodosService.class);
+			return service.getByPatientUuid(patientUuid);
+		}*/
+	
+	@Override
+	public Object retrieve(String uuid, RequestContext context) throws ResponseException {
+		return super.retrieve(uuid, context);
 	}
 	
 	@Override
@@ -48,6 +55,7 @@ public class PatientTodosResource extends DataDelegatingCrudResource<PatientTodo
 	
 	@Override
 	public PatientTodo save(PatientTodo patientTodo) {
+		service = Context.getService(PatientTodosService.class);
 		try {
 			return service.saveTodos(patientTodo);
 		}
@@ -63,29 +71,25 @@ public class PatientTodosResource extends DataDelegatingCrudResource<PatientTodo
 	
 	@Override
 	public DelegatingResourceDescription getRepresentationDescription(Representation rep) {
-		DelegatingResourceDescription description = null;
+		DelegatingResourceDescription description;
 		
 		if (rep instanceof DefaultRepresentation || rep instanceof FullRepresentation || rep instanceof RefRepresentation) {
 			description = new DelegatingResourceDescription();
+			description.addProperty("todo_id");
 			description.addProperty("uuid");
-			description.addProperty("id");
 			description.addProperty("description");
-			description.addProperty("todo_date");
-			description.addProperty("patient_id");
+			description.addProperty("due_date");
+			description.addProperty("patient_id", Representation.DEFAULT);
+			return description;
+		} else {
+			return null;
 		}
-		return description;
 	}
 	
 	@Override
 	protected NeedsPaging doGetAll(RequestContext context) throws ResponseException {
-		PatientTodo ob1 = new PatientTodo("todo1", new Date(), new Patient());
-		PatientTodo ob2 = new PatientTodo("todo2", new Date(), new Patient());
-		PatientTodo ob3 = new PatientTodo("todo2", new Date(), new Patient());
-//		List<PatientTodo> todo = service.getAllTodos();
-		List<PatientTodo> todos = new ArrayList<PatientTodo>();
-		todos.add(ob1);
-		todos.add(ob2);
-		todos.add(ob3);
+		service = Context.getService(PatientTodosService.class);
+		List<PatientTodo> todos = service.getAllTodos();
 		log.info("patienttodos");
 		log.info(todos);
 		return new NeedsPaging<PatientTodo>(todos, context);

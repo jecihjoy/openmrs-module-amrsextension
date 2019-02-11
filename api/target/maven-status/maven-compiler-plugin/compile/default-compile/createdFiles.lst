@@ -1,6 +1,6 @@
-org\openmrs\module\patienttodos\PatienttodosActivator.class
-org\openmrs\module\patienttodos\api\services\PatientTodosService.class
-org\openmrs\module\patienttodos\api\db\PatientTodoDao.class
-org\openmrs\module\patienttodos\models\PatientTodo.class
-org\openmrs\module\patienttodos\api\db\hibernate\HibernatePatientTodoDao.class
-org\openmrs\module\patienttodos\api\services\impl\PatientTodosServiceImpl.class
+org/openmrs/module/patienttodos/api/db/PatientTodoDao.class
+org/openmrs/module/patienttodos/models/PatientTodo.class
+org/openmrs/module/patienttodos/api/services/impl/PatientTodosServiceImpl.class
+org/openmrs/module/patienttodos/api/services/PatientTodosService.class
+org/openmrs/module/patienttodos/api/db/hibernate/HibernatePatientTodoDao.class
+org/openmrs/module/patienttodos/PatienttodosActivator.class
