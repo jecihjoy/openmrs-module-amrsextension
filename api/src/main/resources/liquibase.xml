@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
- 
+
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
 
-    <changeSet id="patient00000000000000000" author="jecihjoy">
+    <changeSet id="jecih20884" author="jecihjoy">
         <validCheckSum>ANY</validCheckSum>
         <preConditions onFail="MARK_RAN">
             <not>
@@ -21,8 +21,7 @@
                 <constraints nullable="false" primaryKey="true"/>
             </column>
 
-            <column name="description" type="varchar(255)">
-            </column>
+            <column name="description" type="varchar(255)"/>
             <column name="due_date" type="DATE">
             </column>
             <column name="patient_id" type="int">
@@ -42,4 +41,85 @@
                                  referencedTableName="patient_id" referencedColumnNames="patient_id"/>
 
     </changeSet>
+
+
+    <changeSet id="387290059984" author="jecihjoy">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="procedure_tests"/>
+            </not>
+        </preConditions>
+        <comment>Create procedure_tests table</comment>
+        <createTable tableName="procedure_tests" >
+            <column name="procedure_test_id" autoIncrement="true" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="requires_specimen" type="boolean"/>
+            <column name="specimen_source" type="int" />
+            <column name="number_of_repeats" type="int"/>
+            <column name="laterality" type="varchar(20)"/>
+            <column name="test_notes" type="text"/>
+            <column name="uuid" type="varchar(38)"/>
+            <column name="changed_by" type="int"/>
+            <column name="creator" type="int"/>
+            <column name="date_created" type="datetime"/>
+            <column name="date_changed" type="datetime"/>
+            <column name="date_voided" type="datetime"/>
+            <column name="void_reason" type="varchar(255)"/>
+            <column name="voided" type="boolean"/>
+            <column name="voided_by" type="int"/>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="procedure_tests_specimen_source_fk"
+                                 baseTableName="procedure_tests" baseColumnNames="specimen_source"
+                                 referencedTableName="concept" referencedColumnNames="concept_id" />
+    </changeSet>
+
+    <changeSet id="387259948" author="jecihjoy">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="procedure_order"/>
+            </not>
+        </preConditions>
+        <comment>Create procedure_order table</comment>
+        <createTable tableName="procedure_order" >
+            <column name="order_id" autoIncrement="true" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="clinical_history" type="text"/>
+            <column name="procedure_name" type="int"/>
+            <column name="frequency" type="int"/>
+            <column name="procedure_test" type="int"/>
+            <column name="uuid" type="varchar(38)"/>
+            <column name="action" type="varchar(38)"/>
+            <column name="changed_by" type="int"/>
+            <column name="dateActivated" type="datetime"/>
+            <column name="dateStopped" type="datetime"/>
+            <column name="autoExpireDate" type="datetime"/>
+            <column name="creator" type="int"/>
+            <column name="date_created" type="datetime"/>
+            <column name="date_changed" type="datetime"/>
+            <column name="date_voided" type="datetime"/>
+            <column name="void_reason" type="varchar(255)"/>
+            <column name="voided" type="boolean"/>
+            <column name="voided_by" type="int"/>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="procedure_order_order_id_fk"
+                                 baseTableName="procedure_order" baseColumnNames="order_id"
+                                 referencedTableName="orders" referencedColumnNames="order_id" />
+
+        <addForeignKeyConstraint constraintName="procedure_order_procedure_name_fk"
+                                 baseTableName="procedure_order" baseColumnNames="procedure_name"
+                                 referencedTableName="concept" referencedColumnNames="concept_id" />
+
+        <addForeignKeyConstraint constraintName="frequency_fk"
+                                 baseTableName="procedure_order" baseColumnNames="frequency"
+                                 referencedTableName="order_frequency" referencedColumnNames="order_frequency_id" />
+
+        <addForeignKeyConstraint constraintName="procedure_order_procedure_test_fk"
+                                 baseTableName="procedure_order" baseColumnNames="procedure_test"
+                                 referencedTableName="procedure_tests" referencedColumnNames="procedure_test_id" />
+    </changeSet>
+
 </databaseChangeLog>

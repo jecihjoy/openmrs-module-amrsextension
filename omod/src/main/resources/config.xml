@@ -6,13 +6,13 @@
 	<id>${project.parent.artifactId}</id>
 	<name>${project.parent.name}</name>
 	<version>${project.parent.version}</version>
-	<package>org.openmrs.module.patienttodos</package>
+	<package>org.openmrs.module.procedureorder</package>
 	<author>jecihjoy</author>
 	<description>
 			${project.parent.description}
 	</description>
 
-	<activator>org.openmrs.module.patienttodos.PatienttodosActivator</activator>
+	<activator>org.openmrs.module.procedureorder.ProcedureorderActivator</activator>
 	
 	<!-- <updateURL>https://modules.openmrs.org/modules/download/@MODULE_ID@/update.rdf</updateURL> -->
 	<!-- /Base Module Properties -->
@@ -37,7 +37,7 @@
 	<!-- Extensions -->
 	<extension>
 		<point>org.openmrs.admin.list</point>
-		<class>org.openmrs.module.patienttodos.extension.html.AdminList</class>
+		<class>org.openmrs.module.procedureorder.extension.html.AdminList</class>
 	</extension>
 
 	<aware_of_modules>

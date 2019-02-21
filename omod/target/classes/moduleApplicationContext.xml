@@ -21,59 +21,7 @@
   		    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
   		    http://www.springframework.org/schema/util
   		    http://www.springframework.org/schema/util/spring-util-3.0.xsd">
-    <context:component-scan base-package="org.openmrs.module.patienttodos"/>
+    <context:component-scan base-package="org.openmrs.module.procedureorder"/>
 
-    <bean id="patientTodoDAO" class="org.openmrs.module.patienttodos.api.db.hibernate.HibernatePatientTodoDao">
-        <!--<constructor-arg ref="dbSessionFactory"/>-->
-    </bean>
-
-
-    <bean parent="serviceContext">
-        <property name="moduleService">
-            <list>
-                <value>org.openmrs.module.patienttodos.api.services.PatientTodosService</value> <!-- Your service's interface class -->
-                <bean class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
-                    <property name="transactionManager"><ref bean="transactionManager"/></property>
-                    <property name="target">
-                        <bean class="org.openmrs.module.patienttodos.api.services.impl.PatientTodosServiceImpl"> <!-- Your service's concrete class -->
-                            <constructor-arg name="dao" ref="patientTodoDAO"/>
-                            <!--<property name="dao">-->
-                                <!--<ref bean="patientTodoDAO"/>-->
-                            <!--</property>-->
-                        </bean>
-                    </property>
-                    <property name="preInterceptors">
-                        <ref bean="serviceInterceptors" />
-                    </property>
-                    <property name="transactionAttributeSource">
-                        <bean class="org.springframework.transaction.annotation.AnnotationTransactionAttributeSource"/>
-                    </property>
-                </bean>
-            </list>
-        </property>
-    </bean>
-<!--    <bean parent="serviceContext">
-        <property name="moduleService">
-            <list>
-                <value> org.openmrs.module.patienttodos.api.services.PatientTodosService</value> &lt;!&ndash; Your service's interface class &ndash;&gt;
-                <bean class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
-                    <property name="transactionManager"><ref bean="transactionManager"/></property>
-                    <property name="target">
-                        <bean class="org.openmrs.module.patienttodos.api.services.impl.PatientTodosServiceImpl"> &lt;!&ndash; Your service's concrete class &ndash;&gt;
-                            <property name="dao"> &lt;!&ndash; Name of the DAO property on your ServiceImpl &ndash;&gt;
-                                <ref bean="patienttodos.PatientTodoDao"/>
-                            </property>
-                        </bean>
-                    </property>
-                    <property name="preInterceptors">
-                        <ref bean="serviceInterceptors" />
-                    </property>
-                    <property name="transactionAttributeSource">
-                        <bean class="org.springframework.transaction.annotation.AnnotationTransactionAttributeSource"/>
-                    </property>
-                </bean>
-            </list>
-        </property>
-    </bean>-->
 </beans>
 

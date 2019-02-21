@@ -1,6 +1,9 @@
-org/openmrs/module/patienttodos/api/db/PatientTodoDao.class
-org/openmrs/module/patienttodos/models/PatientTodo.class
-org/openmrs/module/patienttodos/api/services/impl/PatientTodosServiceImpl.class
-org/openmrs/module/patienttodos/api/services/PatientTodosService.class
-org/openmrs/module/patienttodos/api/db/hibernate/HibernatePatientTodoDao.class
-org/openmrs/module/patienttodos/PatienttodosActivator.class
+org/openmrs/module/procedureorder/api/db/hibernate/HibernatePatientTodoDao.class
+org/openmrs/module/procedureorder/api/services/impl/PatientTodosServiceImpl.class
+org/openmrs/module/procedureorder/api/services/PatientTodosService.class
+org/openmrs/module/procedureorder/models/ProcedureOrder.class
+org/openmrs/module/procedureorder/api/db/PatientTodoDao.class
+org/openmrs/module/procedureorder/ProcedureorderActivator.class
+org/openmrs/module/procedureorder/models/ProcedureTest$Laterality.class
+org/openmrs/module/procedureorder/models/PatientTodo.class
+org/openmrs/module/procedureorder/models/ProcedureTest.class

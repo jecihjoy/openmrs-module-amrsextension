@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/patienttodos.iml" filepath="$PROJECT_DIR$/patienttodos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api/patienttodos-api.iml" filepath="$PROJECT_DIR$/api/patienttodos-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/omod/patienttodos-omod.iml" filepath="$PROJECT_DIR$/omod/patienttodos-omod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/procedureorder-api.iml" filepath="$PROJECT_DIR$/api/procedureorder-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/omod/procedureorder-omod.iml" filepath="$PROJECT_DIR$/omod/procedureorder-omod.iml" />
     </modules>
   </component>
 </project>

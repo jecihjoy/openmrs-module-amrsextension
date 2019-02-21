@@ -6,14 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="patienttodos-api" />
-        <module name="patienttodos-omod" />
+        <module name="procedureorder-api" />
+        <module name="procedureorder-omod" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="patienttodos" target="1.5" />
-      <module name="patienttodos-api" target="1.6" />
-      <module name="patienttodos-omod" target="1.6" />
+      <module name="procedureorder-api" target="1.6" />
+      <module name="procedureorder-omod" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
