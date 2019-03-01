@@ -1,15 +1,20 @@
 package org.openmrs.module.procedureorder.models;
 
-import org.openmrs.*;
+import org.openmrs.Concept;
+import org.openmrs.Order;
+import org.openmrs.OrderFrequency;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity(name = "ProcedureOrder")
 @Table(name = "procedure_order")
 public class ProcedureOrder extends Order {
 	
 	public static final long serialVersionUID = 1780L;
+	
+	public enum Laterality {
+		LEFT, RIGHT, BILATERAL
+	}
 	
 	@OneToOne(optional = false, targetEntity = Order.class)
 	@Id
@@ -28,27 +33,24 @@ public class ProcedureOrder extends Order {
 	@JoinColumn(name = "frequency")
 	private OrderFrequency frequency;
 	
-	@OneToMany
-	@JoinColumn(name = "procedure_test")
-	private List<ProcedureTest> procedureTest;
+	@Column(name = "requires_specimen")
+	private boolean requiresSpecimen;
+	
+	@ManyToOne
+	@JoinColumn(name = "specimen_source")
+	private Concept specimenSource;
+	
+	@Column(name = "number_of_repeats")
+	private int numberOfRepeats;
+	
+	@Column(name = "laterality")
+	private Laterality laterality;
+	
+	@Column(name = "test_notes")
+	private String testNotes;
 	
 	public ProcedureOrder() {
 	}
-	
-	/*	@Override
-		public ProcedureOrder copy() {
-			return copyHelper(new ProcedureOrder());
-		}
-		
-		protected ProcedureOrder copyHelper(ProcedureOrder target) {
-			super.copyHelper(target);
-			target.clinicalHistory = getClinicalHistory();
-			target.procedureName = getProcedureName();
-			target.frequency = getFrequency();
-			target.procedureTest = getProcedureTest();
-			
-			return target;
-		}*/
 	
 	public Concept getProcedureName() {
 		return procedureName;
@@ -64,14 +66,6 @@ public class ProcedureOrder extends Order {
 	
 	public void setFrequency(OrderFrequency frequency) {
 		this.frequency = frequency;
-	}
-	
-	public List<ProcedureTest> getProcedureTest() {
-		return procedureTest;
-	}
-	
-	public void setProcedureTest(List<ProcedureTest> procedureTest) {
-		this.procedureTest = procedureTest;
 	}
 	
 	public Order getOrder() {
@@ -90,13 +84,43 @@ public class ProcedureOrder extends Order {
 		this.clinicalHistory = clinicalHistory;
 	}
 	
-	@Override
-	public Integer getId() {
-		return null;
+	public boolean isRequiresSpecimen() {
+		return requiresSpecimen;
 	}
 	
-	@Override
-	public void setId(Integer integer) {
-		
+	public void setRequiresSpecimen(boolean requiresSpecimen) {
+		this.requiresSpecimen = requiresSpecimen;
+	}
+	
+	public Concept getSpecimenSource() {
+		return specimenSource;
+	}
+	
+	public void setSpecimenSource(Concept specimenSource) {
+		this.specimenSource = specimenSource;
+	}
+	
+	public int getNumberOfRepeats() {
+		return numberOfRepeats;
+	}
+	
+	public void setNumberOfRepeats(int numberOfRepeats) {
+		this.numberOfRepeats = numberOfRepeats;
+	}
+	
+	public Laterality getLaterality() {
+		return laterality;
+	}
+	
+	public void setLaterality(Laterality laterality) {
+		this.laterality = laterality;
+	}
+	
+	public String getTestNotes() {
+		return testNotes;
+	}
+	
+	public void setTestNotes(String testNotes) {
+		this.testNotes = testNotes;
 	}
 }

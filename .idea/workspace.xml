@@ -2,108 +2,113 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b0ec6d3-6ca5-4ae1-b86f-fe44fdfc4e1b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_8_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_core_1_5_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/impl/PatientTodosServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/PatientTodo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/ProcedureorderActivator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/api/db/PatientTodoDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/api/db/hibernate/HibernatePatientTodoDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/api/services/PatientTodosService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/api/services/impl/PatientTodosServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/models/PatientTodo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/models/ProcedureOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/models/ProcedureTest$Laterality.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/models/ProcedureTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/target/procedureorder-api-1.0.0-SNAPSHOT-tests.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/target/procedureorder-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/ProcedureOrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/TodosResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/procedureorder/web/controller/ProcedureOrderController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/procedureorder/web/resources/PatientTodosResource.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/procedureorder/web/resources/TodosResource.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT-tests.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT.omod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/lib/procedureorder-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/liquibase.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/moduleApplicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/org/openmrs/module/procedureorder/web/controller/ProcedureOrderController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/org/openmrs/module/procedureorder/web/resources/PatientTodosResource.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/org/openmrs/module/procedureorder/web/resources/TodosResource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_c3p0_0_9_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_2_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_4_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_4_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_facet_4_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_4_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_4_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_4_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_2_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_c3p0_4_3_9_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_9_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_ehcache_4_3_9_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_search_engine_5_1_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_search_orm_5_1_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_api_openmrs_api_2_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/OrderSetExtDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/hibernate/HibernateOrderSetExtDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/OrderSetExtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/impl/OrderSetExtServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/DrugSetMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/OrderSetExt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/OrderSetMemberExt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/SetMemberType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/OrderSetExtController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/DrugSetMemberSubclassHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/MOrderResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/OrderSetExtResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/OrderSetMemberExtResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/ProcedureOrderSubclassHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/ProcedureSetMemberSubclassHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/SetMemberTypeResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/TestResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_webservices_rest_omod_common_tests_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_webservices_rest_omod_common_tests_2_24_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_webservices_rest_omod_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_webservices_rest_omod_common_2_23_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_webservices_rest_omod_common_2_14.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/patienttodos-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/procedureorder-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/PatienttodosActivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/ProcedureorderActivator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/api/db/PatientTodoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/PatientTodoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/api/db/hibernate/HibernatePatientTodoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/hibernate/HibernatePatientTodoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/api/services/PatientTodosService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/PatientTodosService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/api/services/impl/PatientTodosServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/models/PatientTodo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/procedureorder-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/procedureorder-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/PatientTodoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/hibernate/HibernatePatientTodoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/PatientTodosService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/impl/PatientTodosServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/PatientTodo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureSetMember.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/resources/liquibase.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/liquibase.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/classes/liquibase.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/classes/liquibase.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/classes/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/classes/moduleApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/patienttodos/PatienttodosActivator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/patienttodos/api/db/PatientTodoDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/patienttodos/api/db/hibernate/HibernatePatientTodoDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/patienttodos/api/services/PatientTodosService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/patienttodos/api/services/impl/PatientTodosServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/patienttodos/models/PatientTodo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/ProcedureorderActivator.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/ProcedureorderActivator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/api/db/PatientTodoDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/api/db/hibernate/HibernatePatientTodoDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/api/services/PatientTodosService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/api/services/impl/PatientTodosServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/models/PatientTodo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/models/ProcedureOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/models/ProcedureOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/models/ProcedureTest$Laterality.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/procedureorder/models/ProcedureTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/maven-java-formatter-cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-java-formatter-cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/patienttodos-api-1.0.0-SNAPSHOT-tests.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/patienttodos-api-1.0.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/patienttodos-omod.iml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/procedureorder-omod.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/procedureorder-api-1.0.0-SNAPSHOT-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/procedureorder-api-1.0.0-SNAPSHOT-tests.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/procedureorder-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/procedureorder-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/patienttodos/extension/html/AdminList.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/extension/html/AdminList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/patienttodos/web/controller/PatienttodosController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/patienttodos/web/resources/PatientTodosResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/PatientTodosResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/resources/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/procedureorder-omod.iml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/procedureorder-omod.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/ProcedureOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/OrderExtController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/PatientTodosResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/TodosResource.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/classes/liquibase.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/liquibase.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/classes/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/moduleApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/patienttodos/extension/html/AdminList.class" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/procedureorder/extension/html/AdminList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/patienttodos/web/controller/PatienttodosController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/patienttodos/web/resources/PatientTodosResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/procedureorder/web/controller/ProcedureOrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/procedureorder/web/resources/PatientTodosResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/procedureorder/web/resources/TodosResource.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/classes/webModuleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/webModuleApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/dependency-maven-plugin-markers/org.openmrs.module-patienttodos-api-jar-1.0.0-SNAPSHOT.marker" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/dependency-maven-plugin-markers/org.openmrs.module-procedureorder-api-jar-1.0.0-SNAPSHOT.marker" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/maven-java-formatter-cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-java-formatter-cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/patienttodos-1.0.0-SNAPSHOT-tests.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/patienttodos-1.0.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/patienttodos-1.0.0-SNAPSHOT.omod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/patienttodos-1.0.0-SNAPSHOT/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/patienttodos-1.0.0-SNAPSHOT/lib/patienttodos-api-1.0.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/patienttodos-1.0.0-SNAPSHOT/liquibase.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/patienttodos-1.0.0-SNAPSHOT/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/patienttodos-1.0.0-SNAPSHOT/messages_es.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/messages_es.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/patienttodos-1.0.0-SNAPSHOT/messages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/messages_fr.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/patienttodos-1.0.0-SNAPSHOT/moduleApplicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/patienttodos-1.0.0-SNAPSHOT/org/openmrs/module/patienttodos/extension/html/AdminList.class" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/org/openmrs/module/procedureorder/extension/html/AdminList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/patienttodos-1.0.0-SNAPSHOT/org/openmrs/module/patienttodos/web/controller/PatienttodosController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/patienttodos-1.0.0-SNAPSHOT/org/openmrs/module/patienttodos/web/resources/PatientTodosResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/patienttodos-1.0.0-SNAPSHOT/webModuleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/webModuleApplicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT-tests.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT.omod" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT.omod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/lib/procedureorder-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/lib/procedureorder-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/liquibase.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/liquibase.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/moduleApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/org/openmrs/module/procedureorder/web/controller/ProcedureOrderController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/org/openmrs/module/procedureorder/web/resources/PatientTodosResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/org/openmrs/module/procedureorder/web/resources/TodosResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/webModuleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/procedureorder-1.0.0-SNAPSHOT/webModuleApplicationContext.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/omod/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -116,134 +121,145 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/ProcedureOrderSubclassHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/MOrderResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/module/webservices.rest-omod-1.10/2.14/webservices.rest-omod-1.10-2.14.jar!/org/openmrs/module/webservices/rest/web/v1_0/resource/openmrs1_10/OrderResource1_10.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="176" column="81" selection-start-line="176" selection-start-column="7" selection-end-line="176" selection-end-column="81" />
+              <folding>
+                <element signature="e#8243#8244#0" expanded="true" />
+                <element signature="e#8331#8332#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/OrderType.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+              <folding>
+                <element signature="e#946#947#0" expanded="true" />
+                <element signature="e#992#993#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/ProcedureSetMemberSubclassHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="574">
+              <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureSetMember.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="459">
+              <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2508#2509#0" expanded="true" />
+                <element signature="e#2541#2542#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/resources/liquibase.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="707">
+              <caret line="310" column="47" selection-start-line="310" selection-start-column="47" selection-end-line="310" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/OrderSetMemberExt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="12" column="58" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1227#1228#0" expanded="true" />
-                <element signature="e#1252#1253#0" expanded="true" />
-                <element signature="e#1298#1299#0" expanded="true" />
-                <element signature="e#1318#1319#0" expanded="true" />
-                <element signature="e#1346#1347#0" expanded="true" />
-                <element signature="e#1366#1367#0" expanded="true" />
+                <element signature="e#1211#1212#0" expanded="true" />
+                <element signature="e#1241#1242#0" expanded="true" />
                 <element signature="e#1405#1406#0" expanded="true" />
-                <element signature="e#1432#1433#0" expanded="true" />
-                <element signature="e#1473#1474#0" expanded="true" />
-                <element signature="e#1503#1504#0" expanded="true" />
-                <element signature="e#1566#1567#0" expanded="true" />
-                <element signature="e#1613#1614#0" expanded="true" />
-                <element signature="e#1653#1654#0" expanded="true" />
-                <element signature="e#1681#1682#0" expanded="true" />
+                <element signature="e#1452#1453#0" expanded="true" />
+                <element signature="e#1553#1554#0" expanded="true" />
+                <element signature="e#1576#1577#0" expanded="true" />
+                <element signature="e#1707#1708#0" expanded="true" />
                 <element signature="e#1740#1741#0" expanded="true" />
-                <element signature="e#1783#1784#0" expanded="true" />
-                <element signature="e#1820#1821#0" expanded="true" />
-                <element signature="e#1849#1850#0" expanded="true" />
-                <element signature="e#1906#1907#0" expanded="true" />
-                <element signature="e#1951#1952#0" expanded="true" />
-                <element signature="e#1990#1991#0" expanded="true" />
-                <element signature="e#2014#2015#0" expanded="true" />
-                <element signature="e#2068#2069#0" expanded="true" />
-                <element signature="e#2103#2104#0" expanded="true" />
-                <element signature="e#2137#2138#0" expanded="true" />
-                <element signature="e#2160#2161#0" expanded="true" />
-                <element signature="e#2208#2209#0" expanded="true" />
-                <element signature="e#2241#2242#0" expanded="true" />
+                <element signature="e#1850#1851#0" expanded="true" />
+                <element signature="e#1877#1878#0" expanded="true" />
+                <element signature="e#2025#2026#0" expanded="true" />
+                <element signature="e#2066#2067#0" expanded="true" />
+                <element signature="e#2191#2192#0" expanded="true" />
+                <element signature="e#2222#2223#0" expanded="true" />
+                <element signature="e#2457#2458#0" expanded="true" />
+                <element signature="e#2506#2507#0" expanded="true" />
+                <element signature="e#2539#2540#0" expanded="true" />
+                <element signature="e#2560#2561#0" expanded="true" />
+                <element signature="e#2605#2606#0" expanded="true" />
+                <element signature="e#2634#2635#0" expanded="true" />
+                <element signature="e#2672#2673#0" expanded="true" />
+                <element signature="e#2694#2695#0" expanded="true" />
+                <element signature="e#2745#2746#0" expanded="true" />
+                <element signature="e#2776#2777#0" expanded="true" />
+                <element signature="e#2815#2816#0" expanded="true" />
+                <element signature="e#2850#2851#0" expanded="true" />
+                <element signature="e#2896#2897#0" expanded="true" />
+                <element signature="e#2926#2927#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/pom.xml">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/DrugSetMember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/PatientTodoDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/Order.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="20" column="27" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/ProcedureOrderController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#632#633#0" expanded="true" />
-                <element signature="e#689#690#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/PatientTodo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="11" column="48" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/hibernate/HibernatePatientTodoDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="62" column="49" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+            <state relative-caret-position="119">
+              <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/impl/PatientTodosServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="47" selection-start-line="47" selection-end-line="51" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/PatientTodosService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" selection-start-line="24" selection-end-line="27" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -268,7 +284,28 @@
       <find>getPatientTodos</find>
       <find>OrderController</find>
       <find>patient</find>
+      <find>class</find>
+      <find>stopOrder</find>
+      <find>saveOrderInternal</find>
+      <find>aMomentBefore</find>
+      <find>discontinueExistingOrdersIfNecessary</find>
+      <find>doseUnits</find>
+      <find>freq</find>
+      <find>frequency</find>
+      <find>sequence_number</find>
+      <find>order_frequency</find>
+      <find>frequency_fk</find>
+      <find>retire</find>
+      <find>order_set_member</find>
+      <find>save</find>
+      <find>orderSet</find>
+      <find>getUnRetiredOrderSetMembers</find>
+      <find>sortOrdersBasedOnDateActivatedOrDateStopped</find>
+      <find>getOrderSetMemberByUuid</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -276,53 +313,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/models/Item.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/api/db/PatienttodosDao.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/PatienttodosActivator.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/api/services/PatienttodosService.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/api/db/patientTodoDao.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/api/db/hibernate/PatienttodosDao.java" />
-        <option value="$PROJECT_DIR$/api/src/test/java/org/openmrs/module/patienttodos/PatienttodosServiceTest.java" />
-        <option value="$PROJECT_DIR$/api/src/test/java/org/openmrs/module/patienttodos/dao/HibernatePatientTodoDaoTest.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/api/services/impl/PatienttodosServiceImpl.java" />
-        <option value="$PROJECT_DIR$/api/src/test/java/org/openmrs/module/patienttodos/api/PatienttodosServiceTest.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/patienttodos/extension/html/AdminList.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/patienttodos/web/controller/PatienttodosController.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/api/db/PatientTodoDao.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/patienttodos/web/controller/TodosConntroller.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/models/PatientTodo.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/api/db/hibernate/HibernatePatientTodoDao.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/api/services/PatientTodosService.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/patienttodos/api/services/impl/PatientTodosServiceImpl.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/patienttodos/web/resources/PatientTodosResource.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/patienttodos/web/resources/TodosResource.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/PatientTodo.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/hibernate/HibernateProcedureDao.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/OrderController.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/TodosConntroller.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/ProcedureorderActivator.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/PatienttodosActivator.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/api/pom.xml" />
-        <option value="$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/TestEntity.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/PatienttodosController.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/PatientTodosResource.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/TodosResource.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/resources/config.xml" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/ProcedureOrderService.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/ProcedureOrderController.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/hibernate/HibernateProcedureOrderDao.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/impl/ProcedureOrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureTests.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureTest.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/AOrderType.java" />
-        <option value="$PROJECT_DIR$/api/src/main/resources/liquibase.xml" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/ProcedureOrderResource.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/impl/AOrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureOrder.java" />
         <option value="$PROJECT_DIR$/omod/pom.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureTest.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/OrderSetMemberM.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/TestOrderM.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/TestModel.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/DrugsSetMembers.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/resources/config.xml" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/hibernate/OrderSaveHandler.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/OrderResource.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/impl/MOrderService.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/MOrderService.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/impl/MOrderServiceImp.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/OrderSetMembers.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/OrderSetMember.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/OrderSet.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/MOrderController.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/OrderControllerExt.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/OrderExrController.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/OrderExtController.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/OrderExrController.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/OrderSetExt.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/OrderSetsMResource.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/OrderSetExtResource.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/TestResource.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/OrderSetMemberExt.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/OrderSetExtController.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureOrderSetMember.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/DrugOrderSetMember.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/OrderSetMemberExtResource.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/DrugSetMemberSubClassHandler.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/SetMemberType.java" />
+        <option value="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/hibernate/HibernateOrderSetExtDao.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/OrderSetExtService.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/impl/OrderSetExtServiceImp.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/SetMemberTypeResource.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/DrugSetMemberSubclassHandler.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/ProcedureSetMemberSubclassHandler.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/DrugSetMember.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureSetMember.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureOrder.java" />
+        <option value="$PROJECT_DIR$/api/src/main/resources/liquibase.xml" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/MOrderResource.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/ProcedureOrderSubclassHandler.java" />
       </list>
     </option>
   </component>
@@ -356,7 +397,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
+    <option name="x" value="993" />
     <option name="y" value="25" />
     <option name="width" value="927" />
     <option name="height" value="1055" />
@@ -370,6 +411,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -571,19 +613,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="openmrs-module-procedureorder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550740702979" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551430761899" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/api/src/test/java/org/openmrs/module/patienttodos" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../openmrs-core" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../openmrs-module-patienttodos" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -624,6 +672,7 @@
       </method>
     </configuration>
     <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
       <listeners />
@@ -664,16 +713,16 @@
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2246818" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21914776" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="DB Browser" order="7" />
-      <window_info id="Project Explorer" order="8" />
-      <window_info id="Job Explorer" order="9" />
+      <window_info id="DB Browser" order="7" weight="0.32982844" />
+      <window_info id="Project Explorer" order="8" weight="0.32982844" />
+      <window_info id="Job Explorer" order="9" weight="0.13337022" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32829374" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
@@ -683,8 +732,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4980631" visible="true" weight="0.24298055" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5019369" side_tool="true" weight="0.22030237" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4969563" visible="true" weight="0.16198704" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5030437" side_tool="true" weight="0.2138229" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
       <window_info anchor="bottom" id="Console" order="12" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32937366" />
@@ -705,135 +754,23 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/patienttodos/fragment/controller/UsersFragmentController.java" />
-    <entry file="file://$PROJECT_DIR$/api/src/test/java/org/openmrs/module/patienttodos/api/PatienttodosServiceTest.java" />
-    <entry file="file://$PROJECT_DIR$/api/src/test/java/org/openmrs/module/patienttodos/dao/HibernatePatientTodoDaoTest.java" />
-    <entry file="file://$PROJECT_DIR$/omod/src/test/java/org/openmrs/module/patienttodos/AdminListExtensionTest.java" />
-    <entry file="file://$PROJECT_DIR$/api/src/main/resources/messages.properties">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/PatientTodoDao.java" />
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/hibernate/HibernatePatientTodoDao.java" />
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/PatientTodosService.java" />
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/impl/PatientTodosServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/TodosResource.java" />
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/PatientTodosResource.java" />
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/PatientTodo.java" />
+    <entry file="file://$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/resources/messages_es.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/resources/messages_fr.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/BaseOpenmrsObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+        <state relative-caret-position="374">
+          <caret line="22" column="78" selection-start-line="22" selection-start-column="78" selection-end-line="22" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/OpenmrsData.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/OpenmrsObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/api/OpenmrsService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/api/impl/BaseOpenmrsService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/PatientIdentifier.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/PatientIdentifierType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/Patient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/Person.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="55" column="30" lean-forward="true" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/BaseOpenmrsData.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/jfree/jcommon/1.0.15/jcommon-1.0.15.jar!/org/jfree/base/log/module.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/OrderController.java" />
-    <entry file="file://$PROJECT_DIR$/omod/procedureorder-omod.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/extension/html/AdminList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/TestEntity.java" />
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/TodosConntroller.java" />
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/PatienttodosController.java" />
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/PatientTodosResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/impl/ProcedureOrderServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/ProcedureorderActivator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="221">
           <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -841,86 +778,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/ProcedureOrderService.java" />
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/TodosResource.java">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/TestModel.java" />
+    <entry file="file://$PROJECT_DIR$/omod/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/hibernate/HibernateProcedureOrderDao.java" />
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/AOrderType.java" />
-    <entry file="file://$PROJECT_DIR$/api/src/main/resources/liquibase.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="104" column="49" selection-start-line="104" selection-start-column="49" selection-end-line="104" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/impl/AOrderServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/ProcedureOrderResource.java" />
-    <entry file="file://$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+        <state relative-caret-position="177">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/resources/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/procedureorder-api.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/Order.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/ProcedureOrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="561">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -931,91 +800,396 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/PatientTodoDao.java">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/DrugsSetMembers.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/2.1.0/openmrs-api-2.1.0.jar!/org/openmrs/api/impl/OrderServiceImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state relative-caret-position="340">
+          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/hibernate/HibernatePatientTodoDao.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/extension/html/AdminList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="62" column="49" selection-start-line="62" selection-start-column="49" selection-end-line="62" selection-end-column="49" />
+        <state relative-caret-position="306">
+          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/OrderSetMemberM.java" />
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/TestOrderM.java" />
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/impl/MOrderServiceImp.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/2.1.0/openmrs-api-2.1.0.jar!/org/openmrs/DosingInstructions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/hibernate/OrderSaveHandler.java" />
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/MOrderService.java" />
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/OrderSetExtDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/OrderExrController.java" />
+    <entry file="file://$PROJECT_DIR$/omod/src/main/resources/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/OrderExtController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/module/webservices.rest-omod-common/2.14/webservices.rest-omod-common-2.14.jar!/org/openmrs/module/webservices/rest/web/v1_0/controller/BaseRestController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/BaseOpenmrsMetadata.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="82" column="18" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+          <folding>
+            <element signature="e#1728#1729#0" expanded="true" />
+            <element signature="e#1767#1768#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/OrderSetsMResource.java" />
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/controller/OrderSetExtController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="71" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1732#1748#0" expanded="true" />
+            <element signature="e#1818#1826#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/OrderSetMemberExtResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="146" selection-start-line="23" selection-start-column="146" selection-end-line="23" selection-end-column="175" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1734#1735#0" expanded="true" />
+            <element signature="e#1771#1772#0" expanded="true" />
+            <element signature="e#2233#2234#0" expanded="true" />
+            <element signature="e#2270#2271#0" expanded="true" />
+            <element signature="e#2904#2905#0" expanded="true" />
+            <element signature="e#2940#2941#0" expanded="true" />
+            <element signature="e#3271#3290#0" expanded="true" />
+            <element signature="e#5023#5024#0" expanded="true" />
+            <element signature="e#5068#5069#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/OrderSetExt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="39" selection-start-line="39" selection-end-line="41" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/impl/PatientTodosServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/TestResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="47" selection-start-line="47" selection-end-line="51" selection-end-column="38" />
+        <state relative-caret-position="374">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/PatientTodosService.java">
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/SetMemberType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" selection-start-line="24" selection-end-line="27" selection-end-column="4" />
+        <state relative-caret-position="221">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/PatientTodo.java">
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/OrderSetExtResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="85" column="25" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/db/hibernate/HibernateOrderSetExtDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="96" column="32" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/OrderSetExtService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/api/services/impl/OrderSetExtServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="148" column="11" selection-start-line="148" selection-start-column="11" selection-end-line="148" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/SetMemberTypeResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="79" column="51" selection-start-line="79" selection-start-column="51" selection-end-line="79" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/DrugSetMemberSubclassHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="46" column="31" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/OrderSetMemberExt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="48" />
+          <caret line="12" column="58" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1211#1212#0" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1405#1406#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="e#1576#1577#0" expanded="true" />
+            <element signature="e#1707#1708#0" expanded="true" />
+            <element signature="e#1740#1741#0" expanded="true" />
+            <element signature="e#1850#1851#0" expanded="true" />
+            <element signature="e#1877#1878#0" expanded="true" />
+            <element signature="e#2025#2026#0" expanded="true" />
+            <element signature="e#2066#2067#0" expanded="true" />
+            <element signature="e#2191#2192#0" expanded="true" />
+            <element signature="e#2222#2223#0" expanded="true" />
+            <element signature="e#2457#2458#0" expanded="true" />
+            <element signature="e#2506#2507#0" expanded="true" />
+            <element signature="e#2539#2540#0" expanded="true" />
+            <element signature="e#2560#2561#0" expanded="true" />
+            <element signature="e#2605#2606#0" expanded="true" />
+            <element signature="e#2634#2635#0" expanded="true" />
+            <element signature="e#2672#2673#0" expanded="true" />
+            <element signature="e#2694#2695#0" expanded="true" />
+            <element signature="e#2745#2746#0" expanded="true" />
+            <element signature="e#2776#2777#0" expanded="true" />
+            <element signature="e#2815#2816#0" expanded="true" />
+            <element signature="e#2850#2851#0" expanded="true" />
+            <element signature="e#2896#2897#0" expanded="true" />
+            <element signature="e#2926#2927#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/DrugSetMember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureSetMember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/resources/liquibase.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="310" column="47" selection-start-line="310" selection-start-column="47" selection-end-line="310" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="459">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2508#2509#0" expanded="true" />
+            <element signature="e#2541#2542#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models/ProcedureTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/1.11.6/openmrs-api-1.11.6.jar!/org/openmrs/OrderType.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        <state relative-caret-position="323">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1227#1228#0" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
-            <element signature="e#1298#1299#0" expanded="true" />
-            <element signature="e#1318#1319#0" expanded="true" />
-            <element signature="e#1346#1347#0" expanded="true" />
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1405#1406#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#1566#1567#0" expanded="true" />
-            <element signature="e#1613#1614#0" expanded="true" />
-            <element signature="e#1653#1654#0" expanded="true" />
-            <element signature="e#1681#1682#0" expanded="true" />
-            <element signature="e#1740#1741#0" expanded="true" />
-            <element signature="e#1783#1784#0" expanded="true" />
-            <element signature="e#1820#1821#0" expanded="true" />
-            <element signature="e#1849#1850#0" expanded="true" />
-            <element signature="e#1906#1907#0" expanded="true" />
-            <element signature="e#1951#1952#0" expanded="true" />
-            <element signature="e#1990#1991#0" expanded="true" />
-            <element signature="e#2014#2015#0" expanded="true" />
-            <element signature="e#2068#2069#0" expanded="true" />
-            <element signature="e#2103#2104#0" expanded="true" />
-            <element signature="e#2137#2138#0" expanded="true" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2208#2209#0" expanded="true" />
-            <element signature="e#2241#2242#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#992#993#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/module/webservices.rest-omod-1.10/2.14/webservices.rest-omod-1.10-2.14.jar!/org/openmrs/module/webservices/rest/web/v1_0/resource/openmrs1_10/OrderResource1_10.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="176" column="81" selection-start-line="176" selection-start-column="7" selection-end-line="176" selection-end-column="81" />
+          <folding>
+            <element signature="e#8243#8244#0" expanded="true" />
+            <element signature="e#8331#8332#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/MOrderResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/ProcedureSetMemberSubclassHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="97" column="22" lean-forward="true" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/procedureorder/web/resources/ProcedureOrderSubclassHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Invalid</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8.0_191</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>procedureorder-api</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="patienttodos" target="1.5" />
-      <module name="procedureorder-api" target="1.6" />
+      <module name="procedureorder-api" target="7" />
       <module name="procedureorder-omod" target="1.6" />
     </bytecodeTargetLevel>
   </component>
