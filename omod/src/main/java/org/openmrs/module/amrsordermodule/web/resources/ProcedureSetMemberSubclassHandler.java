@@ -1,4 +1,3 @@
-/*
 package org.openmrs.module.amrsordermodule.web.resources;
 
 import io.swagger.models.Model;
@@ -99,4 +98,3 @@ public class ProcedureSetMemberSubclassHandler extends BaseDelegatingSubclassHan
 		return null;
 	}
 }
-*/

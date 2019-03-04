@@ -1,4 +1,3 @@
-/*
 package org.openmrs.module.amrsordermodule.web.resources;
 
 import io.swagger.models.Model;
@@ -43,53 +42,53 @@ public class DrugSetMemberSubclassHandler extends BaseDelegatingSubclassHandler<
 			OrderSetMemberExtResource setm = (OrderSetMemberExtResource) Context.getService(RestService.class)
 			        .getResourceBySupportedClass(OrderSetMemberExt.class);
 			DelegatingResourceDescription description = setm.getRepresentationDescription(rep);
-            description.addProperty("display");
-            description.addProperty("uuid");
-            description.addProperty("doseUnits", Representation.REF);
-            description.addProperty("dose");
-            description.addProperty("frequency", Representation.REF);
-            description.addProperty("asNeeded");
-            description.addProperty("quantity");
-            description.addProperty("quantityUnits", Representation.REF);
-            description.addProperty("drug", Representation.REF);
-            description.addProperty("asNeededCondition");
-            description.addProperty("dosingType", Representation.REF);
-            description.addProperty("numRefills", Representation.REF);
-            description.addProperty("dosingInstructions");
-            description.addProperty("duration");
-            description.addProperty("durationUnits");
-            description.addProperty("brandName");
-            description.addProperty("dispenseAsWritten");
-            description.addProperty("drugNonCoded");
-            description.addProperty("route", Representation.REF);
-            description.addSelfLink();
-            description.addLink("full", ".?v=" + RestConstants.REPRESENTATION_FULL);
+			//            description.addProperty("display");
+			description.addProperty("uuid");
+			description.addProperty("doseUnits", Representation.REF);
+			description.addProperty("dose");
+			description.addProperty("frequency", Representation.REF);
+			//            description.addProperty("asNeeded");
+			description.addProperty("quantity");
+			description.addProperty("quantityUnits", Representation.REF);
+			description.addProperty("drug", Representation.REF);
+			description.addProperty("asNeededCondition");
+			//            description.addProperty("dosingType", Representation.REF);
+			description.addProperty("numRefills", Representation.REF);
+			description.addProperty("dosingInstructions");
+			description.addProperty("duration");
+			description.addProperty("durationUnits");
+			description.addProperty("brandName");
+			//            description.addProperty("dispenseAsWritten");
+			description.addProperty("drugNonCoded");
+			description.addProperty("route", Representation.REF);
+			description.addSelfLink();
+			description.addLink("full", ".?v=" + RestConstants.REPRESENTATION_FULL);
 			return description;
 		} else if (rep instanceof FullRepresentation) {
 			OrderSetMemberExtResource setm = (OrderSetMemberExtResource) Context.getService(RestService.class)
 			        .getResourceBySupportedClass(OrderSetMemberExt.class);
 			DelegatingResourceDescription description = setm.getRepresentationDescription(rep);
-            description.addProperty("display");
-            description.addProperty("uuid");
-            description.addProperty("doseUnits", Representation.REF);
-            description.addProperty("dose");
-            description.addProperty("frequency", Representation.REF);
-            description.addProperty("asNeeded");
-            description.addProperty("quantity");
-            description.addProperty("quantityUnits", Representation.REF);
-            description.addProperty("drug", Representation.REF);
-            description.addProperty("asNeededCondition");
-            description.addProperty("dosingType", Representation.REF);
-            description.addProperty("numRefills", Representation.REF);
-            description.addProperty("dosingInstructions");
-            description.addProperty("duration");
-            description.addProperty("durationUnits");
-            description.addProperty("brandName");
-            description.addProperty("dispenseAsWritten");
-            description.addProperty("drugNonCoded");
-            description.addProperty("route", Representation.REF);
-            description.addSelfLink();
-            description.addLink("full", ".?v=" + RestConstants.REPRESENTATION_FULL);
+			//            description.addProperty("display");
+			description.addProperty("uuid");
+			description.addProperty("doseUnits", Representation.REF);
+			description.addProperty("dose");
+			description.addProperty("frequency", Representation.REF);
+			//            description.addProperty("asNeeded");
+			description.addProperty("quantity");
+			description.addProperty("quantityUnits", Representation.REF);
+			description.addProperty("drug", Representation.REF);
+			description.addProperty("asNeededCondition");
+			//            description.addProperty("dosingType", Representation.REF);
+			description.addProperty("numRefills", Representation.REF);
+			description.addProperty("dosingInstructions");
+			description.addProperty("duration");
+			description.addProperty("durationUnits");
+			description.addProperty("brandName");
+			//            description.addProperty("dispenseAsWritten");
+			description.addProperty("drugNonCoded");
+			description.addProperty("route", Representation.REF);
+			description.addSelfLink();
+			description.addLink("full", ".?v=" + RestConstants.REPRESENTATION_FULL);
 			return description;
 		}
 		return null;
@@ -100,23 +99,23 @@ public class DrugSetMemberSubclassHandler extends BaseDelegatingSubclassHandler<
 		OrderSetMemberExtResource setm = (OrderSetMemberExtResource) Context.getService(RestService.class)
 		        .getResourceBySupportedClass(OrderSetMemberExt.class);
 		DelegatingResourceDescription description = setm.getCreatableProperties();
-        description.addProperty("doseUnits", Representation.REF);
-        description.addProperty("dose");
-        description.addProperty("frequency", Representation.REF);
-        description.addProperty("asNeeded");
-        description.addProperty("quantity");
-        description.addProperty("quantityUnits", Representation.REF);
-        description.addProperty("drug", Representation.REF);
-        description.addProperty("asNeededCondition");
-        description.addProperty("dosingType", Representation.REF);
-        description.addProperty("numRefills", Representation.REF);
-        description.addProperty("dosingInstructions");
-        description.addProperty("duration");
-        description.addProperty("durationUnits");
-        description.addProperty("brandName");
-        description.addProperty("dispenseAsWritten");
-        description.addProperty("drugNonCoded");
-        description.addProperty("route", Representation.REF);
+		description.addProperty("doseUnits", Representation.REF);
+		description.addProperty("dose");
+		description.addProperty("frequency", Representation.REF);
+		description.addProperty("asNeeded");
+		description.addProperty("quantity");
+		description.addProperty("quantityUnits", Representation.REF);
+		description.addProperty("drug", Representation.REF);
+		description.addProperty("asNeededCondition");
+		description.addProperty("dosingType", Representation.REF);
+		description.addProperty("numRefills", Representation.REF);
+		description.addProperty("dosingInstructions");
+		description.addProperty("duration");
+		description.addProperty("durationUnits");
+		description.addProperty("brandName");
+		description.addProperty("dispenseAsWritten");
+		description.addProperty("drugNonCoded");
+		description.addProperty("route", Representation.REF);
 		return description;
 	}
 	
@@ -144,4 +143,3 @@ public class DrugSetMemberSubclassHandler extends BaseDelegatingSubclassHandler<
 		return null;
 	}
 }
-*/

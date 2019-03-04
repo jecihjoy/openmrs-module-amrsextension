@@ -3,6 +3,7 @@ package org.openmrs.module.amrsordermodule.models;
 import org.openmrs.Concept;
 import org.openmrs.Order;
 import org.openmrs.OrderFrequency;
+import org.openmrs.Patient;
 
 import javax.persistence.*;
 
@@ -49,8 +50,22 @@ public class ProcedureOrder extends Order {
 	@Column(name = "test_notes")
 	private String testNotes;
 	
-	public ProcedureOrder() {
-	}
+	/*	@ManyToOne
+		@JoinColumn(name = "patient_id")
+		private Patient patient;
+
+		public ProcedureOrder() {
+		}
+
+		@Override
+		public Patient getPatient() {
+			return patient;
+		}
+
+		@Override
+		public void setPatient(Patient patient) {
+			this.patient = patient;
+		}*/
 	
 	public Concept getProcedureName() {
 		return procedureName;

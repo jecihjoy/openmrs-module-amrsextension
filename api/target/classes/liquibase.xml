@@ -280,15 +280,15 @@
 
     <!--PROCEDURE TESTS-->
 
-    <changeSet id="387290dd9905899896346dd984" author="jecihjoy">
+    <changeSet id="387290dd9905899896346d99d984" author="jecihjoy">
         <preConditions onFail="MARK_RAN">
             <not>
-                <tableExists tableName="procedure_tests"/>
+                <tableExists tableName="procedure_set_member"/>
             </not>
         </preConditions>
         <comment>Create procedure_tests table</comment>
-        <createTable tableName="procedure_tests" >
-            <column name="procedure_test_id" autoIncrement="true" type="int">
+        <createTable tableName="procedure_set_member" >
+            <column name="set_member_id" autoIncrement="true" type="int">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
             <column name="requires_specimen" type="boolean"/>
@@ -296,7 +296,7 @@
             <column name="number_of_repeats" type="int"/>
             <column name="laterality" type="varchar(20)"/>
             <column name="test_notes" type="text"/>
-            <column name="uuid" type="varchar(38)"/>
+<!--            <column name="uuid" type="varchar(38)"/>
             <column name="changed_by" type="int"/>
             <column name="creator" type="int"/>
             <column name="date_created" type="datetime"/>
@@ -304,19 +304,21 @@
             <column name="date_voided" type="datetime"/>
             <column name="void_reason" type="varchar(255)"/>
             <column name="voided" type="boolean"/>
-            <column name="voided_by" type="int"/>
+            <column name="voided_by" type="int"/>-->
         </createTable>
+
+        <addForeignKeyConstraint constraintName="procedure_setmember_fk"
+                                 baseTableName="procedure_set_member" baseColumnNames="set_member_id"
+                                 referencedTableName="order_set_member_ext" referencedColumnNames="order_set_member_id"/>
 
         <addForeignKeyConstraint constraintName="procedure_tests_specimen_source_fk"
                                  baseTableName="procedure_tests" baseColumnNames="specimen_source"
                                  referencedTableName="concept" referencedColumnNames="concept_id" />
     </changeSet>
 
-
-
     <!--PROCEDURE ORDER-->
 
-    <changeSet id="38725dd999899783400996694878" author="jecihjoy">
+    <changeSet id="38725dd99989978340optg0996694878" author="jecihjoy">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="procedure_order"/>

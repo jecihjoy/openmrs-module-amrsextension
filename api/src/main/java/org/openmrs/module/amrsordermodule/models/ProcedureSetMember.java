@@ -1,22 +1,22 @@
 package org.openmrs.module.amrsordermodule.models;
 
-import org.openmrs.BaseOpenmrsData;
 import org.openmrs.Concept;
 
 import javax.persistence.*;
 
 @Entity(name = "ProcedureSetMember")
-@Table(name = "procedure_tests")
-public class ProcedureSetMember extends BaseOpenmrsData {
+@Table(name = "procedure_set_member")
+public class ProcedureSetMember extends OrderSetMemberExt {
 	
 	public enum Laterality {
 		LEFT, RIGHT, BILATERAL
 	}
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@JoinColumn(name = "procedure_test_id")
-	private int testId;
+	/*	@OneToOne(optional = false, targetEntity = OrderSetMemberExt.class)
+		//	@Id
+		//	@GeneratedValue(strategy = GenerationType.AUTO)
+		@JoinColumn(name = "set_member_id")
+		private OrderSetMemberExt setMemberExt;*/
 	
 	@Column(name = "requires_specimen")
 	private boolean requiresSpecimen;
@@ -34,10 +34,6 @@ public class ProcedureSetMember extends BaseOpenmrsData {
 	@Column(name = "test_notes")
 	private String testNotes;
 	
-	@ManyToOne
-	@JoinColumn(name = "procedure_order")
-	private ProcedureOrder procedureOrder;
-	
 	public ProcedureSetMember() {
 	}
 	
@@ -48,24 +44,6 @@ public class ProcedureSetMember extends BaseOpenmrsData {
 		this.numberOfRepeats = numberOfRepeats;
 		this.laterality = laterality;
 		this.testNotes = testNotes;
-	}
-	
-	@Override
-	public Integer getId() {
-		return getTestId();
-	}
-	
-	@Override
-	public void setId(Integer id) {
-		setTestId(id);
-	}
-	
-	public int getTestId() {
-		return testId;
-	}
-	
-	public void setTestId(int testId) {
-		this.testId = testId;
 	}
 	
 	public boolean isRequiresSpecimen() {
@@ -108,11 +86,4 @@ public class ProcedureSetMember extends BaseOpenmrsData {
 		this.testNotes = testNotes;
 	}
 	
-	public ProcedureOrder getProcedureOrder() {
-		return procedureOrder;
-	}
-	
-	public void setProcedureOrder(ProcedureOrder procedureOrder) {
-		this.procedureOrder = procedureOrder;
-	}
 }
