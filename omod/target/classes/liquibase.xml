@@ -61,7 +61,7 @@
 
 <!--    ORDER SET MEMBER    ORDER SET MEMBER    ORDER SET MEMBER-->
 
-    <changeSet id="2015JKNd9900dCV85888JND1997885579977099060121537" author="jecihjoy">
+    <changeSet id="2015JKNd9900dCV85888JND199788557997709906012153997" author="jecihjoy">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="order_set_member_ext" />
@@ -75,6 +75,10 @@
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="order_type" type="int">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="set_member_type" type="int" defaultValue="1">
                 <constraints nullable="false"/>
             </column>
             <column name="order_template" type="text"/>
@@ -131,7 +135,6 @@
 <!--
     ORDER TYPE ORDET TYPE ORDER TYPE ORDER TYPE ORDER  TYPE
 -->
-
     <changeSet id="20159977099060121537" author="jecihjoy">
         <preConditions onFail="MARK_RAN">
             <not>
@@ -183,7 +186,7 @@
     DRUG SET MEMBER    DRUG SET MEMBER    DRUG SET MEMBER    DRUG SET MEMBER
 -->
 
-    <changeSet id="12273099388dd68542JNJKVN51i992-24" author="jecih">
+    <changeSet id="12273099388dd68542JNJKVN51i9669882102477" author="jecih">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="drug_set_member"/>
@@ -191,10 +194,9 @@
         </preConditions>
         <comment>Create drug_set_member table</comment>
         <createTable tableName="drug_set_member">
-            <column defaultValueNumeric="0" name="drug_order_set_member_id" type="int">
+            <column defaultValueNumeric="0" name="set_member_id" type="int">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
-            <column name="order_set_member_id" type="int"/>
             <column defaultValueNumeric="0" name="drug_id" type="int"/>
             <column name="dose" type="double"/>
             <column name="dose_units" type="int"/>
@@ -212,6 +214,7 @@
             <column name="dispense_as_written" type="boolean"/>
             <column name="drug_non_coded" type="varchar(255)"/>
 
+<!--
 
             <column name="creator" type="int">
                 <constraints nullable="false"/>
@@ -230,8 +233,13 @@
             <column name="uuid" type="char(38)">
                 <constraints unique="true" nullable="false"/>
             </column>
+-->
         </createTable>
-        <addForeignKeyConstraint constraintName="drug_iddd_fk"
+        <addForeignKeyConstraint constraintName="drug_iddddsm_fk"
+                                 baseTableName="drug_set_member" baseColumnNames="set_member_id"
+                                 referencedTableName="order_set_member_ext" referencedColumnNames="order_set_member_id"/>
+
+ <addForeignKeyConstraint constraintName="drug_iddd_fk"
                                  baseTableName="drug_set_member" baseColumnNames="drug_id"
                                  referencedTableName="drug" referencedColumnNames="drug_id"/>
 
@@ -252,7 +260,7 @@
         <addForeignKeyConstraint constraintName="dose_unitsdd_fk"
                                  baseTableName="drug_set_member" baseColumnNames="dose_units"
                                  referencedTableName="concept" referencedColumnNames="concept_id"/>
-
+<!--
         <addForeignKeyConstraint constraintName="drug_set_member_creatoruu_fk"
                                  baseTableName="drug_set_member" baseColumnNames="creator"
                                  referencedTableName="users" referencedColumnNames="user_id" />
@@ -262,7 +270,7 @@
 
         <addForeignKeyConstraint constraintName="order_set_member_changed_byuu_fk"
                                  baseTableName="drug_set_member" baseColumnNames="changed_by"
-                                 referencedTableName="users" referencedColumnNames="user_id"/>
+                                 referencedTableName="users" referencedColumnNames="user_id"/>-->
     </changeSet>
 
 

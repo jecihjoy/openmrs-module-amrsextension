@@ -1,6 +1,9 @@
-org/openmrs/module/procedureorder/web/resources/OrderSetExtResource.class
-org/openmrs/module/procedureorder/web/resources/MOrderResource.class
-org/openmrs/module/procedureorder/extension/html/AdminList.class
-org/openmrs/module/procedureorder/web/resources/OrderSetMemberExtResource.class
-org/openmrs/module/procedureorder/web/controller/OrderSetExtController.class
-org/openmrs/module/procedureorder/web/controller/OrderExtController.class
+org/openmrs/module/amrsordermodule/web/resources/SetMemberTypeResource.class
+org/openmrs/module/amrsordermodule/extension/html/AdminList.class
+org/openmrs/module/amrsordermodule/web/resources/MOrderResource.class
+org/openmrs/module/amrsordermodule/web/resources/ProcedureOrderSubclassHandler$1.class
+org/openmrs/module/amrsordermodule/web/controller/OrderSetExtController.class
+org/openmrs/module/amrsordermodule/web/resources/OrderSetExtResource.class
+org/openmrs/module/amrsordermodule/web/resources/ProcedureOrderSubclassHandler.class
+org/openmrs/module/amrsordermodule/web/controller/OrderExtController.class
+org/openmrs/module/amrsordermodule/web/resources/OrderSetMemberExtResource.class

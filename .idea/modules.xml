@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/patienttodos.iml" filepath="$PROJECT_DIR$/patienttodos.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api/procedureorder-api.iml" filepath="$PROJECT_DIR$/api/procedureorder-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/omod/procedureorder-omod.iml" filepath="$PROJECT_DIR$/omod/procedureorder-omod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/amrsordermodule.iml" filepath="$PROJECT_DIR$/amrsordermodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/amrsordermodule-api.iml" filepath="$PROJECT_DIR$/api/amrsordermodule-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/omod/amrsordermodule-omod.iml" filepath="$PROJECT_DIR$/omod/amrsordermodule-omod.iml" />
     </modules>
   </component>
 </project>

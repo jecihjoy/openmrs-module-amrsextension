@@ -22,12 +22,12 @@
 	</dependencies>
 	<parent>
 		<groupId>org.openmrs.module</groupId>
-		<artifactId>procedureorder</artifactId>
+		<artifactId>amrsordermodule</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>procedureorder-api</artifactId>
+	<artifactId>amrsordermodule-api</artifactId>
 	<packaging>jar</packaging>
-	<name>Procedureorder API</name>
-	<description>API project for procedureorder</description>
+	<name>amrsordermodule API</name>
+	<description>API project for amrsordermodule</description>
 </project>

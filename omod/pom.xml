@@ -3,19 +3,19 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.openmrs.module</groupId>
-        <artifactId>procedureorder</artifactId>
+        <artifactId>amrsordermodule</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>procedureorder-omod</artifactId>
+    <artifactId>amrsordermodule-omod</artifactId>
     <packaging>jar</packaging>
-    <name>Procedureorder OMOD</name>
-    <description>Omod project for Procedureorder</description>
+    <name>amrsordermodule OMOD</name>
+    <description>Omod project for amrsordermodule</description>
 
     <dependencies>
         <dependency>
             <groupId>org.openmrs.module</groupId>
-            <artifactId>procedureorder-api</artifactId>
+            <artifactId>amrsordermodule-api</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -53,17 +53,12 @@
             <groupId>io.swagger</groupId>
             <artifactId>swagger-models</artifactId>
             <version>1.5.13</version>
-            <scope>compile</scope>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.openmrs.module</groupId>
             <artifactId>webservices.rest-omod-common</artifactId>
-            <version>2.23.0</version>
-        </dependency>
-        <dependency>
-            <groupId>io.swagger</groupId>
-            <artifactId>swagger-models</artifactId>
-            <version>1.5.13</version>
+            <version>2.24.0</version>
         </dependency>
     </dependencies>
 
