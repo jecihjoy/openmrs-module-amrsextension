@@ -1,3 +1,4 @@
+/*
 package org.openmrs.module.amrsordermodule.web.resources;
 
 import org.openmrs.Order;
@@ -31,3 +32,4 @@ public class MOrderResource extends OrderResource1_10 {
 	}
 	
 }
+*/

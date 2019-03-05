@@ -2,7 +2,6 @@ org/openmrs/module/amrsordermodule/web/resources/SetMemberTypeResource.class
 org/openmrs/module/amrsordermodule/extension/html/AdminList.class
 org/openmrs/module/amrsordermodule/web/resources/ProcedureSetMemberSubclassHandler.class
 org/openmrs/module/amrsordermodule/web/resources/DrugSetMemberSubclassHandler.class
-org/openmrs/module/amrsordermodule/web/resources/MOrderResource.class
 org/openmrs/module/amrsordermodule/web/resources/ProcedureOrderSubclassHandler$1.class
 org/openmrs/module/amrsordermodule/web/controller/OrderSetExtController.class
 org/openmrs/module/amrsordermodule/web/resources/OrderSetExtResource.class
