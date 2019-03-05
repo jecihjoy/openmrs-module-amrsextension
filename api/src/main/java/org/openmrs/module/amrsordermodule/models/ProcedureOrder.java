@@ -6,8 +6,8 @@ import org.openmrs.OrderFrequency;
 
 import javax.persistence.*;
 
-@Entity(name = "ProcedureOrder")
-@Table(name = "procedure_order")
+/*@Entity(name = "ProcedureOrder")
+@Table(name = "procedure_order")*/
 public class ProcedureOrder extends Order {
 	
 	public static final long serialVersionUID = 1780L;
@@ -16,37 +16,38 @@ public class ProcedureOrder extends Order {
 		LEFT, RIGHT, BILATERAL
 	}
 	
-	@OneToOne(optional = false, targetEntity = Order.class)
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@JoinColumn(name = "order_id")
+	/*	@OneToOne(optional = false, targetEntity = Order.class)
+		@Id
+		@GeneratedValue(strategy = GenerationType.AUTO)
+		@JoinColumn(name = "order_id")*/
 	private Order order;
 	
-	@Column(name = "clinical_history")
+	//	@Column(name = "clinical_history")
 	private String clinicalHistory;
 	
-	@OneToOne
-	@JoinColumn(name = "procedure_name")
+	/*	@OneToOne
+		@JoinColumn(name = "procedure_name")*/
 	private Concept procedureName;
 	
+	/*
 	@ManyToOne
-	@JoinColumn(name = "frequency")
+	@JoinColumn(name = "frequency")*/
 	private OrderFrequency frequency;
 	
-	@Column(name = "requires_specimen")
+	//	@Column(name = "requires_specimen")
 	private boolean requiresSpecimen;
 	
-	@ManyToOne
-	@JoinColumn(name = "specimen_source")
+	/*	@ManyToOne
+		@JoinColumn(name = "specimen_source")*/
 	private Concept specimenSource;
 	
-	@Column(name = "number_of_repeats")
+	//	@Column(name = "number_of_repeats")
 	private int numberOfRepeats;
 	
-	@Column(name = "laterality")
+	//	@Column(name = "laterality")
 	private Laterality laterality;
 	
-	@Column(name = "test_notes")
+	//	@Column(name = "test_notes")
 	private String testNotes;
 	
 	public ProcedureOrder() {

@@ -8,10 +8,12 @@ import javax.persistence.*;
 @Table(name = "drug_set_member")
 public class DrugSetMember extends OrderSetMemberExt {
 	
-	/*	@OneToOne(optional = false, targetEntity = OrderSetMemberExt.class)
-		@JoinColumn(name = "set_member_id")
-		private OrderSetMemberExt setMemberExt;
-		*/
+	//	@OneToOne(optional = false, targetEntity = OrderSetMemberExt.class)
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@JoinColumn(name = "set_member_id")
+	private OrderSetMemberExt setMemberExt;
+	
 	@Column(name = "dose")
 	private Double dose;
 	

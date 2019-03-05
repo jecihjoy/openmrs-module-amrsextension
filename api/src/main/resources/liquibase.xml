@@ -89,9 +89,7 @@
             <column name="sequence_number" type="int">
                 <constraints nullable="false"/>
             </column>
-            <column name="concept_id" type="int">
-                <constraints nullable="false"/>
-            </column>
+            <column name="concept_id" type="int"/>
          <!--   <column name="creator" type="int">
                 <constraints nullable="false"/>
             </column>-->

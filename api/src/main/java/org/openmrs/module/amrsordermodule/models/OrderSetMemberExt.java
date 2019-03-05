@@ -7,38 +7,39 @@ import org.openmrs.OrderType;
 
 import javax.persistence.*;
 
-@Entity(name = "OrderSetMemberExt")
-@Table(name = "order_set_member_ext")
+/*@Entity(name = "OrderSetMemberExt")
+@Table(name = "order_set_member_ext")*/
 public class OrderSetMemberExt extends BaseOpenmrsMetadata {
 	
 	public static final long serialVersionUID = 72232L;
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "order_set_member_id")
+	/*	@Id
+		@GeneratedValue(strategy = GenerationType.AUTO)
+		@Column(name = "order_set_member_id")*/
 	private Integer orderSetMemberId;
 	
-	@ManyToOne
-	@JoinColumn(name = "order_type")
+	/*	@ManyToOne
+		@JoinColumn(name = "order_type")*/
 	private OrderType orderType;
 	
+	/*
 	@ManyToOne
-	@JoinColumn(name = "set_member_type")
+	@JoinColumn(name = "set_member_type")*/
 	private SetMemberType setMemberType;
 	
-	@ManyToOne()
-	@JoinColumn(name = "order_set_id")
-	@JsonManagedReference
+	/*	@ManyToOne()
+		@JoinColumn(name = "order_set_id")
+		@JsonManagedReference*/
 	private OrderSetExt orderSet;
 	
-	@Column(name = "order_template")
+	//	@Column(name = "order_template")
 	private String orderTemplate;
 	
-	@Column(name = "order_template_type")
+	//	@Column(name = "order_template_type")
 	private String orderTemplateType;
 	
-	@ManyToOne
-	@JoinColumn(name = "concept_id")
+	/*	@ManyToOne
+		@JoinColumn(name = "concept_id")*/
 	private Concept concept;
 	
 	/*@Column(name = "sequence_number")

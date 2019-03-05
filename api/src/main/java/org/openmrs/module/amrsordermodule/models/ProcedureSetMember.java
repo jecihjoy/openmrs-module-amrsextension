@@ -12,11 +12,11 @@ public class ProcedureSetMember extends OrderSetMemberExt {
 		LEFT, RIGHT, BILATERAL
 	}
 	
-	/*	@OneToOne(optional = false, targetEntity = OrderSetMemberExt.class)
-		//	@Id
-		//	@GeneratedValue(strategy = GenerationType.AUTO)
-		@JoinColumn(name = "set_member_id")
-		private OrderSetMemberExt setMemberExt;*/
+	//	@OneToOne(optional = false, targetEntity = OrderSetMemberExt.class)
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@JoinColumn(name = "set_member_id")
+	private OrderSetMemberExt setMemberExt;
 	
 	@Column(name = "requires_specimen")
 	private boolean requiresSpecimen;

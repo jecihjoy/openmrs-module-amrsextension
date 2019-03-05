@@ -21,8 +21,8 @@ import org.openmrs.api.APIException;
 
 import javax.persistence.*;
 
-@Entity(name = "OrderSetExt")
-@Table(name = "order_set_ext")
+/*@Entity(name = "OrderSetExt")
+@Table(name = "order_set_ext")*/
 public class OrderSetExt extends BaseOpenmrsData implements OpenmrsMetadata {
 	
 	public static final long serialVersionUID = 72232L;
@@ -36,22 +36,22 @@ public class OrderSetExt extends BaseOpenmrsData implements OpenmrsMetadata {
 		ALL, ONE, ANY
 	}
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "order_set_id")
+	/*	@Id
+		@GeneratedValue(strategy = GenerationType.AUTO)
+		@Column(name = "order_set_id")*/
 	private Integer orderSetId;
 	
-	@Column(name = "operator")
+	//	@Column(name = "operator")
 	private org.openmrs.module.amrsordermodule.models.OrderSetExt.Operator operator;
 	
-	@OneToMany(mappedBy = "orderSet")
-	@JsonBackReference
+	/*	@OneToMany(mappedBy = "orderSet")
+		@JsonBackReference*/
 	private List<OrderSetMemberExt> orderSetMembers;
 	
-	@Column(name = "name")
+	//	@Column(name = "name")
 	private String name;
 	
-	@Column(name = "description")
+	//	@Column(name = "description")
 	private String description;
 	
 	public OrderSetExt() {
