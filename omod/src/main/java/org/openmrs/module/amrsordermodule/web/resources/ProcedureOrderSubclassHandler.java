@@ -31,8 +31,7 @@ import org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.OrderUt
 
 import java.util.*;
 
-@SubClassHandler(supportedClass = ProcedureOrder.class, supportedOpenmrsVersions = { "2.0.*", "2.1.*", "2.2.*", "2.4.*",
-        "2.8.*" })
+@SubClassHandler(supportedClass = ProcedureOrder.class, supportedOpenmrsVersions = { "2.0.*", "2.1.*", "2.2.*", "2.4.*", "2.8.*" })
 public class ProcedureOrderSubclassHandler extends BaseDelegatingSubclassHandler<Order, ProcedureOrder> implements DelegatingSubclassHandler<Order, ProcedureOrder> {
 	
 	@Override
