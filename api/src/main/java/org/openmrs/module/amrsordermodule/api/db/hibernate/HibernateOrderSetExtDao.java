@@ -95,7 +95,6 @@ public class HibernateOrderSetExtDao {
 	}
 	
 	public SetMemberType saveSetMemberType(SetMemberType orderType) {
-		log.error("SAVING SET MEMBER TYPE");
 		log.error("SAVING SET MEMBER TYPE" + orderType.toString());
 		sessionFactory.getCurrentSession().saveOrUpdate(orderType);
 		return orderType;

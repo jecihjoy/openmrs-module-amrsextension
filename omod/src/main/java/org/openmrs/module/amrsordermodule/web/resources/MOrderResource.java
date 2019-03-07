@@ -1,4 +1,3 @@
-/*
 package org.openmrs.module.amrsordermodule.web.resources;
 
 import org.openmrs.Order;
@@ -9,6 +8,8 @@ import org.openmrs.module.amrsordermodule.web.controller.OrderExtController;
 import org.openmrs.module.webservices.rest.web.RestConstants;
 import org.openmrs.module.webservices.rest.web.annotation.Resource;
 import org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.*;
+
+//+ OrderExtController.MODULE_ORDER_NAMESPACE
 
 @Resource(name = RestConstants.VERSION_1 + OrderExtController.MODULE_ORDER_NAMESPACE + "/morder", supportedClass = Order.class, supportedOpenmrsVersions = { "2.0.*, 2.1.*,2.2.*, 2.4.*, 2.8.*" })
 public class MOrderResource extends OrderResource1_10 {
@@ -32,4 +33,3 @@ public class MOrderResource extends OrderResource1_10 {
 	}
 	
 }
-*/

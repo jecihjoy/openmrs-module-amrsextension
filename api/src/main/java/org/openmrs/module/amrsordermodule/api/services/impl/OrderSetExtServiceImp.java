@@ -65,7 +65,7 @@ public class OrderSetExtServiceImp extends BaseOpenmrsService implements OrderSe
 			}
 			
 		}
-		ensureSetMemberTypeIsSet(orderSet);
+		//		ensureSetMemberTypeIsSet(orderSet);
 		
 		//retiring
 		for (OrderSetMemberExt orderSetMember : orderSet.getOrderSetMembers()) {

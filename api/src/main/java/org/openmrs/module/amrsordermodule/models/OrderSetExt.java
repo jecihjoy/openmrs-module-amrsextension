@@ -1,14 +1,5 @@
 package org.openmrs.module.amrsordermodule.models;
 
-/**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0. If a copy of the MPL was not distributed with this file, You can
- * obtain one at http://mozilla.org/MPL/2.0/. OpenMRS is also distributed under
- * the terms of the Healthcare Disclaimer located at http://openmrs.org/license.
- *
- * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
- * graphic logo is a trademark of OpenMRS Inc.
- */
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -19,69 +10,21 @@ import org.openmrs.OpenmrsMetadata;
 import org.openmrs.User;
 import org.openmrs.api.APIException;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
 
-/*@Entity(name = "OrderSetExt")
-@Table(name = "order_set_ext")*/
 public class OrderSetExt extends BaseOpenmrsData implements OpenmrsMetadata {
 	
-	public static final long serialVersionUID = 72232L;
+	public static final long serialVersionUID = 722322L;
 	
-	/**
-	 * Restrictions put on saving an orderSet. ALL: All the members of the orderSet need to be
-	 * selected for saving ONE: Only one of the member of the orderSet needs to be selected for
-	 * saving ANY: Any of the members of the orderSet can be selected for saving
-	 */
 	public enum Operator {
 		ALL, ONE, ANY
 	}
 	
-	/*	@Id
-		@GeneratedValue(strategy = GenerationType.AUTO)
-		@Column(name = "order_set_id")*/
 	private Integer orderSetId;
 	
-	//	@Column(name = "operator")
-	private org.openmrs.module.amrsordermodule.models.OrderSetExt.Operator operator;
+	private Operator operator;
 	
-	/*	@OneToMany(mappedBy = "orderSet")
-		@JsonBackReference*/
 	private List<OrderSetMemberExt> orderSetMembers;
-	
-	//	@Column(name = "name")
-	private String name;
-	
-	//	@Column(name = "description")
-	private String description;
-	
-	public OrderSetExt() {
-	}
-	
-	@Override
-	public Integer getId() {
-		return getOrderSetId();
-	}
-	
-	@Override
-	public void setId(Integer integer) {
-		setOrderSetId(integer);
-	}
-	
-	public String getName() {
-		return name;
-	}
-	
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-	public String getDescription() {
-		return description;
-	}
-	
-	public void setDescription(String description) {
-		this.description = description;
-	}
 	
 	public Integer getOrderSetId() {
 		return orderSetId;
@@ -134,21 +77,14 @@ public class OrderSetExt extends BaseOpenmrsData implements OpenmrsMetadata {
 		this.addOrderSetMember(orderSetMember, null);
 	}
 	
-	public void removeOrderSetMember(OrderSetMemberExt orderSetMember) {
-		if (getOrderSetMembers().contains(orderSetMember)) {
-			getOrderSetMembers().remove(orderSetMember);
-			orderSetMember.setOrderSet(null);
-		}
+	@Override
+	public Integer getId() {
+		return getOrderSetId();
 	}
 	
 	@Override
-	public User getCreator() {
-		return super.getCreator();
-	}
-	
-	@Override
-	public void setCreator(User creator) {
-		super.setCreator(creator);
+	public void setId(Integer id) {
+		setOrderSetId(id);
 	}
 	
 	public List<OrderSetMemberExt> getUnRetiredOrderSetMembers() {
@@ -161,8 +97,35 @@ public class OrderSetExt extends BaseOpenmrsData implements OpenmrsMetadata {
 		return osm;
 	}
 	
+	public void removeOrderSetMember(OrderSetMemberExt orderSetMember) {
+		if (getOrderSetMembers().contains(orderSetMember)) {
+			getOrderSetMembers().remove(orderSetMember);
+			orderSetMember.setOrderSet(null);
+		}
+	}
+	
 	public void retireOrderSetMember(OrderSetMemberExt orderSetMember) {
 		orderSetMember.setRetired(true);
+	}
+	
+	@Override
+	public String getName() {
+		return null;
+	}
+	
+	@Override
+	public void setName(String s) {
+		
+	}
+	
+	@Override
+	public String getDescription() {
+		return null;
+	}
+	
+	@Override
+	public void setDescription(String s) {
+		
 	}
 	
 	@Override

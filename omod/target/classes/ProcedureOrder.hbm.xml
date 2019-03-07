@@ -17,7 +17,7 @@
     <property name="numberOfRepeats" type="int" column="number_of_repeats"/>
     <property name="laterality" column="laterality" length="20" not-null="false">
         <type name="org.hibernate.type.EnumType">
-            <param name="enumClass">org.openmrs.TestOrder$Laterality</param>
+            <param name="enumClass">org.openmrs.module.amrsordermodule.models.ProcedureOrder$Laterality</param>
             <param name="type">12</param>
         </type>
     </property>
