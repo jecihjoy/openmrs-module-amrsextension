@@ -1,3 +1,4 @@
+<!--
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
@@ -33,7 +34,7 @@
         </list>
 
 
-        <!-- bi-directional many-to-one association to User -->
+        &lt;!&ndash; bi-directional many-to-one association to User &ndash;&gt;
         <many-to-one name="creator" class="User" not-null="true">
             <column name="creator"/>
         </many-to-one>
@@ -41,7 +42,7 @@
                   column="date_created" not-null="true" length="19" />
         <property name="retired" type="java.lang.Boolean"
                   column="retired" length="1" not-null="true"/>
-        <!-- bi-directional many-to-one association to User -->
+        &lt;!&ndash; bi-directional many-to-one association to User &ndash;&gt;
         <many-to-one name="retiredBy" class="User">
             <column name="retired_by" />
         </many-to-one>
@@ -49,7 +50,7 @@
                   column="retire_reason" length="255" />
         <property name="dateRetired" type="java.util.Date"
                   column="date_retired" length="19" />
-        <!-- bi-directional many-to-one association to User -->
+        &lt;!&ndash; bi-directional many-to-one association to User &ndash;&gt;
         <many-to-one name="changedBy" class="User">
             <column name="changed_by" />
         </many-to-one>
@@ -61,3 +62,4 @@
     </class>
 
 </hibernate-mapping>
+-->

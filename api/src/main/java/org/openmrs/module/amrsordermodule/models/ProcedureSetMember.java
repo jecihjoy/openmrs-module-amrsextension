@@ -1,3 +1,4 @@
+/*
 package org.openmrs.module.amrsordermodule.models;
 
 import org.openmrs.Concept;
@@ -87,3 +88,4 @@ public class ProcedureSetMember extends OrderSetMemberExt {
 	}
 	
 }
+*/

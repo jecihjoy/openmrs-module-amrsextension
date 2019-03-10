@@ -1,10 +1,7 @@
 org/openmrs/module/amrsordermodule/models/OrderSetMemberExt.class
 org/openmrs/module/amrsordermodule/models/ProcedureOrder$Laterality.class
-org/openmrs/module/amrsordermodule/models/DrugSetMember.class
 org/openmrs/module/amrsordermodule/AmrsOrdermoduleActivator.class
-org/openmrs/module/amrsordermodule/models/ProcedureSetMember.class
 org/openmrs/module/amrsordermodule/models/OrderSetExt.class
-org/openmrs/module/amrsordermodule/models/ProcedureSetMember$Laterality.class
 org/openmrs/module/amrsordermodule/models/OrderSetExt$Operator.class
 org/openmrs/module/amrsordermodule/api/services/impl/OrderSetExtServiceImp.class
 org/openmrs/module/amrsordermodule/api/services/OrderSetExtService.class

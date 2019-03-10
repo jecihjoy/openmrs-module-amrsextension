@@ -30,6 +30,9 @@ public class OrderSetExtServiceImp extends BaseOpenmrsService implements OrderSe
 	@Override
 	@Transactional(readOnly = false)
 	public OrderSetExt saveOrderSet(OrderSetExt orderSet) throws APIException {
+		failOnExistingOrder(orderSet);
+		ensureSetMemberTypeIsSet(orderSet);
+		failOnOrderTypeMismatch(orderSet);
 		return saveOrderSetInternal(orderSet);
 	}
 	
@@ -52,8 +55,6 @@ public class OrderSetExtServiceImp extends BaseOpenmrsService implements OrderSe
 	}
 	
 	private synchronized OrderSetExt saveOrderSetInternal(OrderSetExt orderSet) throws APIException {
-		//		failOnExistingOrder(orderSet);
-		//		failOnOrderTypeMismatch(orderSet);
 		if (CollectionUtils.isEmpty(orderSet.getOrderSetMembers())) {
 			return dao.save(orderSet);
 		}
@@ -65,7 +66,6 @@ public class OrderSetExtServiceImp extends BaseOpenmrsService implements OrderSe
 			}
 			
 		}
-		//		ensureSetMemberTypeIsSet(orderSet);
 		
 		//retiring
 		for (OrderSetMemberExt orderSetMember : orderSet.getOrderSetMembers()) {
@@ -86,6 +86,11 @@ public class OrderSetExtServiceImp extends BaseOpenmrsService implements OrderSe
 	
 	private void failOnOrderTypeMismatch(OrderSetExt setExt) {
 		for (OrderSetMemberExt memberExt : setExt.getOrderSetMembers()) {
+			log.error("CLASS NAME" + memberExt.getSetMemberType());
+			log.error("CLASS NAME" + memberExt.getSetMemberType());
+			log.error("CLASS NAME" + memberExt.getSetMemberType());
+			log.error("CLASS NAME" + memberExt.getSetMemberType());
+			log.error("CLASS NAME" + memberExt.getSetMemberType());
 			if (!memberExt.getSetMemberType().getJavaClass().isAssignableFrom(memberExt.getClass())) {
 				throw new OrderEntryException("Order.type.class.does.not.match", new Object[] {
 				        memberExt.getSetMemberType().getJavaClass(), memberExt.getClass().getName() });
@@ -94,25 +99,36 @@ public class OrderSetExtServiceImp extends BaseOpenmrsService implements OrderSe
 	}
 	
 	private void ensureSetMemberTypeIsSet(OrderSetExt setExt) {
+		log.error("ORDER INSTANCE OF DRUG ORDER here");
+		log.error("ORDER INSTANCE OF DRUG ORDER " + setExt.getOrderSetMembers().toString());
 		for (OrderSetMemberExt memberExt : setExt.getOrderSetMembers()) {
 			if (memberExt.getSetMemberType() != null) {
 				return;
 			}
 			SetMemberType memberType = null;
+			memberType = Context.getService(OrderSetExtService.class).getSetMemberTypeByUuid(
+			    "0020b143-397b-11e9-be9d-d47df659d900");
+			//			if (memberType == null && memberExt instanceof DrugSetMember) {
+			//				memberType = Context.getService(OrderSetExtService.class).getSetMemberTypeByUuid(
+			//				    "0020b143-397b-11e9-be9d-d47df659d900");
+			//			}
 			
-			if (memberType == null && memberExt instanceof DrugSetMember) {
-				memberType = Context.getService(OrderSetExtService.class).getSetMemberTypeByUuid(
-				    "0020b143-397b-11e9-be9d-d47df659d900");
-			}
-			
-			if (memberType == null && memberExt instanceof ProcedureSetMember) {
-				memberType = Context.getService(OrderSetExtService.class).getSetMemberTypeByUuid("");
-			}
-			
+			//				if (memberType == null && memberExt instanceof ProcedureSetMember) {
+			//					memberType = Context.getService(OrderSetExtService.class).getSetMemberTypeByUuid("");
+			//				}
+			//
 			if (memberType == null) {
+				log.error("ORDER NOt INSTANCE OF DRUG ORDER");
+				log.error("ORDER INSTANCE OF DRUG ORDER");
+				log.error("ORDER INSTANCE OF DRUG ORDER");
+				log.error("ORDER INSTANCE OF DRUG ORDER");
 				throw new OrderEntryException("SetMember.type.cannot.determine");
 			}
 			memberExt.setSetMemberType(memberType);
+			log.error("SETTING SET MEMBER" + memberType.toString());
+			log.error("SETTING SET MEMBER" + memberType.toString());
+			log.error("SETTING SET MEMBER" + memberType.toString());
+			
 		}
 	}
 	

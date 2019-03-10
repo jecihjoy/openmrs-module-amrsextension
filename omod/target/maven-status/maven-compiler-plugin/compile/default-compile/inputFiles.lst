@@ -1,4 +1,10 @@
+/home/jecihjoy/amrs/openmrs-module-amrsorderextension/omod/src/main/java/org/openmrs/module/amrsordermodule/web/resources/OrderSetExtResource.java
+/home/jecihjoy/amrs/openmrs-module-amrsorderextension/omod/src/main/java/org/openmrs/module/amrsordermodule/web/resources/ProcedureSetMemberSubclassHandler.java
 /home/jecihjoy/amrs/openmrs-module-amrsorderextension/omod/src/main/java/org/openmrs/module/amrsordermodule/extension/html/AdminList.java
+/home/jecihjoy/amrs/openmrs-module-amrsorderextension/omod/src/main/java/org/openmrs/module/amrsordermodule/web/resources/OrderResource2_3.java
+/home/jecihjoy/amrs/openmrs-module-amrsorderextension/omod/src/main/java/org/openmrs/module/amrsordermodule/web/resources/SetMemberTypeResource.java
 /home/jecihjoy/amrs/openmrs-module-amrsorderextension/omod/src/main/java/org/openmrs/module/amrsordermodule/web/resources/ProcedureOrderSubclassHandler.java
+/home/jecihjoy/amrs/openmrs-module-amrsorderextension/omod/src/main/java/org/openmrs/module/amrsordermodule/web/resources/OrderSetMemberExtResource.java
 /home/jecihjoy/amrs/openmrs-module-amrsorderextension/omod/src/main/java/org/openmrs/module/amrsordermodule/web/controller/OrderExtController.java
+/home/jecihjoy/amrs/openmrs-module-amrsorderextension/omod/src/main/java/org/openmrs/module/amrsordermodule/web/resources/DrugSetMemberSubclassHandler.java
 /home/jecihjoy/amrs/openmrs-module-amrsorderextension/omod/src/main/java/org/openmrs/module/amrsordermodule/web/controller/OrderSetExtController.java

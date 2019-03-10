@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="package org.openmrs.module.amrsordermodule">
+    <joined-subclass name="org.openmrs.module.amrsordermodule.models.ProcedureOrder" extends="org.openmrs.Order"
+                     table="procedure_order" lazy="false">
+
+    <key column="order_id" not-null="true" on-delete="cascade"/>
+
+    <many-to-one name="procedureName" class="org.openmrs.Concept" column="procedure_name"/>
+    <property name="clinicalHistory" type="java.lang.String" column="clinical_history" length="65535"/>
+    <many-to-one name="frequency" class="org.openmrs.OrderFrequency"/>
+    <property name="requiresSpecimen" type="boolean" column="requires_specimen"/>
+    <many-to-one name="specimenSource" class="org.openmrs.Concept" column="specimen_source"/>
+    <property name="numberOfRepeats" type="int" column="number_of_repeats"/>
+    <property name="laterality" column="laterality" length="20" not-null="false">
+        <type name="org.hibernate.type.EnumType">
+            <param name="enumClass">org.openmrs.module.amrsordermodule.models.ProcedureOrder$Laterality</param>
+            <param name="type">12</param>
+        </type>
+    </property>
+    <property name="testNotes" type="java.lang.String" column="test_notes" length="65535"/>
+
+    </joined-subclass>
+</hibernate-mapping>
