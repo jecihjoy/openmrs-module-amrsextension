@@ -7,7 +7,7 @@
 
 <!--    ORDER SET    ORDER SET    ORDER SET-->
 
-    <changeSet id="2017759dduu9jj10069449775995531009200" author="jecihjoy">
+    <changeSet id="2017759531009200" author="jecihjoy">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="order_set_ext" />
@@ -56,7 +56,7 @@
 
 <!--    ORDER SET MEMBER    ORDER SET MEMBER    ORDER SET MEMBER-->
 
-    <changeSet id="2015JKNd9900dCV85888JND19978855799770990600012153uu009999700" author="jecihjoy">
+    <changeSet id="2019770990600012153uu009999700" author="jecihjoy">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="order_set_member_ext" />
@@ -122,7 +122,7 @@
 <!--
     ORDER TYPE ORDET TYPE ORDER TYPE ORDER TYPE ORDER  TYPE
 -->
-    <changeSet id="201599770990609910021537" author="jecihjoy">
+    <changeSet id="2015997700609910021537" author="jecihjoy">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="order_setmember_type" />
@@ -171,7 +171,7 @@
 
 <!-- DRUG SET MEMBER    DRUG SET MEMBER    DRUG SET MEMBER    DRUG SET MEMBER-->
 
-    <changeSet id="1227309938800dd68542JNJKVN51i966988210992004770088yu9tt99999u" author="jecih">
+    <changeSet id="12276988210992004770088yu9tt99999u" author="jecih">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="drug_set_member"/>
@@ -270,15 +270,15 @@
 
     <!--PROCEDURE ORDER-->
 
-    <changeSet id="38725dd99989978340opt00g0996694878" author="jecihjoy">
-        <preConditions onFail="MARK_RAN">
-            <not>
+    <changeSet id="3099669400000000000000000878" author="jecihjoy">
+        <!--<preConditions onFail="MARK_RAN">
+          &lt;!&ndash;  <not>
                 <tableExists tableName="procedure_order"/>
-            </not>
-        </preConditions>
+            </not>&ndash;&gt;
+        </preConditions>-->
         <comment>Create procedure_order table</comment>
         <createTable tableName="procedure_order" >
-            <column name="order_id" autoIncrement="true" type="int">
+            <column name="order_id" autoIncrement="false" type="int">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
             <column name="clinical_history" type="text"/>

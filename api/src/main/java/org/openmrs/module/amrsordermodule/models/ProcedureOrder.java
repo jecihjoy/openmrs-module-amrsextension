@@ -4,6 +4,8 @@ import org.openmrs.Concept;
 import org.openmrs.Order;
 import org.openmrs.OrderFrequency;
 
+import javax.persistence.*;
+
 public class ProcedureOrder extends Order {
 	
 	public static final long serialVersionUID = 1780L;
@@ -11,8 +13,6 @@ public class ProcedureOrder extends Order {
 	public enum Laterality {
 		LEFT, RIGHT, BILATERAL
 	}
-	
-	private Order order;
 	
 	private String clinicalHistory;
 	
@@ -47,14 +47,6 @@ public class ProcedureOrder extends Order {
 	
 	public void setFrequency(OrderFrequency frequency) {
 		this.frequency = frequency;
-	}
-	
-	public Order getOrder() {
-		return order;
-	}
-	
-	public void setOrder(Order order) {
-		this.order = order;
 	}
 	
 	public String getClinicalHistory() {
