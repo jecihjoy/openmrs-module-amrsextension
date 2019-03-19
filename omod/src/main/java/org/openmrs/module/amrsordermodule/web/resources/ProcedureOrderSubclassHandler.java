@@ -35,7 +35,6 @@ import org.openmrs.module.webservices.rest.web.resource.api.PageableResult;
 import org.openmrs.module.webservices.rest.web.resource.impl.*;
 import org.openmrs.module.webservices.rest.web.response.ResourceDoesNotSupportOperationException;
 import org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.CareSettingResource1_10;
-//import org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.OrderResource1_10;
 import org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.OrderResource1_10;
 import org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs1_10.OrderUtil;
 
@@ -66,13 +65,6 @@ public class ProcedureOrderSubclassHandler extends BaseDelegatingSubclassHandler
 		        .getResourceBySupportedClass(Order.class);
 		return orderResource.getUpdatableProperties();
 	}
-	
-	@PropertyGetter("display")
-	public static String getDisplay(ProcedureOrder delegate) {
-		OrderResource1_10 orderResource = (OrderResource1_10) Context.getService(RestService.class)
-		        .getResourceBySupportedClass(Order.class);
-		return orderResource.getDisplayString(delegate);
-	}//Procedure Order
 	
 	@Override
 	public DelegatingResourceDescription getRepresentationDescription(Representation rep) {
@@ -209,6 +201,14 @@ public class ProcedureOrderSubclassHandler extends BaseDelegatingSubclassHandler
 		        .property("clinicalHistory", new StringProperty())
 		        .property("frequency", new StringProperty().example("uuid"))
 		        .property("numberOfRepeats", new IntegerProperty());
+	}
+	
+	@PropertyGetter("display")
+	public static String getDisplay(ProcedureOrder delegate) {
+		OrderResource1_10 orderResource = (OrderResource1_10) Context.getService(RestService.class)
+		        .getResourceBySupportedClass(Order.class);
+		//		return orderResource.getDisplayString(delegate);
+		return "procedureOrder";
 	}
 	
 }

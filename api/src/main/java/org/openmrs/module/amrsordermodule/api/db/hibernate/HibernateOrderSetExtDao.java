@@ -1,3 +1,4 @@
+/*
 package org.openmrs.module.amrsordermodule.api.db.hibernate;
 
 import org.apache.commons.logging.Log;
@@ -7,7 +8,6 @@ import org.hibernate.criterion.Restrictions;
 import org.openmrs.api.db.DAOException;
 import org.openmrs.api.db.hibernate.DbSession;
 import org.openmrs.api.db.hibernate.DbSessionFactory;
-import org.openmrs.module.amrsordermodule.models.OrderSetExt;
 import org.openmrs.module.amrsordermodule.models.OrderSetMemberExt;
 import org.openmrs.module.amrsordermodule.models.SetMemberType;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -104,3 +104,4 @@ public class HibernateOrderSetExtDao {
 		sessionFactory.getCurrentSession().delete(orderType);
 	}
 }
+*/

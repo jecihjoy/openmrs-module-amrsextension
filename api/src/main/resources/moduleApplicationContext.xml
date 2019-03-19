@@ -23,7 +23,7 @@
   		    http://www.springframework.org/schema/util/spring-util-3.0.xsd">
     <context:component-scan base-package="org.openmrs.module.amrsordermodule"/>
 
-    <bean id="orderSetExtDAO" class="org.openmrs.module.amrsordermodule.api.db.hibernate.HibernateOrderSetExtDao">
+    <bean id="prescriptionTemplateDao" class="org.openmrs.module.amrsordermodule.api.db.hibernate.HibernatePrescriptionTemplateDao">
         <!--<constructor-arg ref="dbSessionFactory"/>-->
     </bean>
 
@@ -31,12 +31,12 @@
     <bean parent="serviceContext">
         <property name="moduleService">
             <list>
-                <value>org.openmrs.module.amrsordermodule.api.services.OrderSetExtService</value> <!-- Your service's interface class -->
+                <value>org.openmrs.module.amrsordermodule.api.services.PrescriptionTemplateService</value> <!-- Your service's interface class -->
                 <bean class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
                     <property name="transactionManager"><ref bean="transactionManager"/></property>
                     <property name="target">
-                        <bean class="org.openmrs.module.amrsordermodule.api.services.impl.OrderSetExtServiceImp"> <!-- Your service's concrete class -->
-                            <constructor-arg name="dao" ref="orderSetExtDAO"/>
+                        <bean class="org.openmrs.module.amrsordermodule.api.services.impl.PrescriptionTemplateServiceImpl"> <!-- Your service's concrete class -->
+                            <constructor-arg name="dao" ref="prescriptionTemplateDao"/>
                             <!--<property name="dao">-->
                             <!--<ref bean="patientTodoDAO"/>-->
                             <!--</property>-->
@@ -52,6 +52,36 @@
             </list>
         </property>
     </bean>
+
+<!--    <bean id="orderSetExtDAO" class="org.openmrs.module.amrsordermodule.api.db.hibernate.HibernateOrderSetExtDao">
+        &lt;!&ndash;<constructor-arg ref="dbSessionFactory"/>&ndash;&gt;
+    </bean>
+
+
+    <bean parent="serviceContext">
+        <property name="moduleService">
+            <list>
+                <value>org.openmrs.module.amrsordermodule.api.services.OrderSetExtService</value> &lt;!&ndash; Your service's interface class &ndash;&gt;
+                <bean class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+                    <property name="transactionManager"><ref bean="transactionManager"/></property>
+                    <property name="target">
+                        <bean class="org.openmrs.module.amrsordermodule.api.services.impl.OrderSetExtServiceImp"> &lt;!&ndash; Your service's concrete class &ndash;&gt;
+                            <constructor-arg name="dao" ref="orderSetExtDAO"/>
+                            &lt;!&ndash;<property name="dao">&ndash;&gt;
+                            &lt;!&ndash;<ref bean="patientTodoDAO"/>&ndash;&gt;
+                            &lt;!&ndash;</property>&ndash;&gt;
+                        </bean>
+                    </property>
+                    <property name="preInterceptors">
+                        <ref bean="serviceInterceptors" />
+                    </property>
+                    <property name="transactionAttributeSource">
+                        <bean class="org.springframework.transaction.annotation.AnnotationTransactionAttributeSource"/>
+                    </property>
+                </bean>
+            </list>
+        </property>
+    </bean>-->
 
 </beans>
 

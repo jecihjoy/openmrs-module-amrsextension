@@ -5,277 +5,14 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
 
-<!--    ORDER SET    ORDER SET    ORDER SET-->
-
-    <changeSet id="2017759531009200" author="jecihjoy">
-        <preConditions onFail="MARK_RAN">
-            <not>
-                <tableExists tableName="order_set_ext" />
-            </not>
-        </preConditions>
-        <comment>
-            Create order_set table
-        </comment>
-        <createTable tableName="order_set_ext">
-            <column name="order_set_id" type="int" autoIncrement="true">
-                <constraints primaryKey="true" nullable="false"/>
-            </column>
-            <column name="operator" type="varchar(50)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="name" type="varchar(255)">
-                <constraints nullable="false"/>
-            </column>
-            <column name="description" type="varchar(1000)"/>
-            <column name="date_created" type="DATETIME">
-                <constraints nullable="false"/>
-            </column>
-            <column defaultValueBoolean="false" name="voided" type="BOOLEAN">
-                <constraints nullable="false"/>
-            </column>
-            <column name="retired_by" type="int"/>
-            <column name="date_retired" type="DATETIME"/>
-            <column name="retire_reason" type="varchar(255)"/>
-            <column name="changed_by" type="int"/>
-            <column name="date_changed" type="DATETIME"/>
-            <column name="uuid" type="char(38)">
-                <constraints unique="true" nullable="false"/>
-            </column>
-        </createTable>
-<!--        <addForeignKeyConstraint constraintName="order_set_creator_ext_fk"
-                                 baseTableName="order_set_ext" baseColumnNames="creator"
-                                 referencedTableName="users" referencedColumnNames="user_id" />-->
-        <addForeignKeyConstraint constraintName="order_set_voided_by_ext_fk"
-                                 baseTableName="order_set_ext" baseColumnNames="retired_by"
-                                 referencedTableName="users" referencedColumnNames="user_id"/>
-        <addForeignKeyConstraint constraintName="order_set_changed_by_ext_fk"
-                                 baseTableName="order_set_ext" baseColumnNames="changed_by"
-                                 referencedTableName="users" referencedColumnNames="user_id"/>
-    </changeSet>
-
-
-<!--    ORDER SET MEMBER    ORDER SET MEMBER    ORDER SET MEMBER-->
-
-    <changeSet id="2019770990600012153uu009999700" author="jecihjoy">
-        <preConditions onFail="MARK_RAN">
-            <not>
-                <tableExists tableName="order_set_member_ext" />
-            </not>
-        </preConditions>
-        <comment>
-            Create order_set_member table
-        </comment>
-        <createTable tableName="order_set_member_ext">
-            <column name="order_set_member_id" autoIncrement="true" type="int">
-                <constraints nullable="false" primaryKey="true"/>
-            </column>
-            <column name="order_type" type="int">
-                <constraints nullable="false"/>
-            </column>
-
-            <column name="set_member_type" type="int" defaultValue="1">
-                <!--<constraints nullable="false"/>-->
-            </column>
-            <column name="order_template" type="text"/>
-            <column name="order_template_type" type="varchar(1024)"/>
-            <column name="order_set_id" type="int">
-                <constraints nullable="false"/>
-            </column>
-            <column name="sequence_number" type="int">
-                <constraints nullable="false"/>
-            </column>
-            <column name="concept_id" type="int"/>
-            <column name="date_created" type="DATETIME">
-                <constraints nullable="false"/>
-            </column>
-            <column defaultValueBoolean="false" name="voided" type="BOOLEAN">
-                <constraints nullable="false"/>
-            </column>
-            <column name="retired_by" type="int"/>
-            <column name="date_retired" type="DATETIME"/>
-            <column name="retire_reason" type="varchar(255)"/>
-            <column name="changed_by" type="int"/>
-            <column name="date_changed" type="DATETIME"/>
-            <column name="uuid" type="char(38)">
-                <constraints unique="true" nullable="false"/>
-            </column>
-        </createTable>
-        <addForeignKeyConstraint constraintName="order_set_member_order_setos_id_fk"
-                                 baseTableName="order_set_member_ext" baseColumnNames="order_set_id"
-                                 referencedTableName="order_set_ext" referencedColumnNames="order_set_id" />
-        <addForeignKeyConstraint constraintName="order_set_member_concept_idos_fk"
-                                 baseTableName="order_set_member_ext" baseColumnNames="concept_id"
-                                 referencedTableName="concept" referencedColumnNames="concept_id"/>
-        <addForeignKeyConstraint constraintName="order_set_member_order_typeos_fk"
-                                 baseTableName="order_set_member_ext" baseColumnNames="order_type"
-                                 referencedTableName="order_type" referencedColumnNames="order_type_id"/>
-        <addForeignKeyConstraint constraintName="order_set_member_voided_byos_fk"
-                                 baseTableName="order_set_member_ext" baseColumnNames="retired_by"
-                                 referencedTableName="users" referencedColumnNames="user_id"/>
-        <addForeignKeyConstraint constraintName="order_set_member_changed_byos_fk"
-                                 baseTableName="order_set_member_ext" baseColumnNames="changed_by"
-                                 referencedTableName="users" referencedColumnNames="user_id"/>
-    </changeSet>
-
-
-
-<!--
-    ORDER TYPE ORDET TYPE ORDER TYPE ORDER TYPE ORDER  TYPE
--->
-    <changeSet id="2015997700609910021537" author="jecihjoy">
-        <preConditions onFail="MARK_RAN">
-            <not>
-                <tableExists tableName="order_setmember_type" />
-            </not>
-        </preConditions>
-        <comment>
-            Create order_set_member table
-        </comment>
-        <createTable tableName="order_setmember_type">
-            <column name="member_type_id" type="int" autoIncrement="true">
-                <constraints primaryKey="true" nullable="false"/>
-            </column>
-            <column name="name" type="varchar(255)"/>
-            <column name="description" type="text"/>
-            <column name="java_class_name" type="varchar(255)"/>
-            <column name="parent" type="text"/>
-           <column name="creator" type="int">
-               <constraints nullable="false"/>
-           </column>
-            <column name="date_created" type="DATETIME">
-                <constraints nullable="false"/>
-            </column>
-            <column defaultValueBoolean="false" name="voided" type="BOOLEAN">
-                <constraints nullable="false"/>
-            </column>
-            <column name="voided_by" type="int"/>
-            <column name="date_voided" type="DATETIME"/>
-            <column name="void_reason" type="varchar(255)"/>
-            <column name="changed_by" type="int"/>
-            <column name="date_changed" type="DATETIME"/>
-            <column name="uuid" type="char(38)">
-                <constraints unique="true" nullable="false"/>
-            </column>
-        </createTable>
-        <addForeignKeyConstraint constraintName="set_member_type_creator_fk"
-                                 baseTableName="order_setmember_type" baseColumnNames="creator"
-                                 referencedTableName="users" referencedColumnNames="user_id" />
-        <addForeignKeyConstraint constraintName="set_member_type_voided_byos_fk"
-                                 baseTableName="order_setmember_type" baseColumnNames="voided_by"
-                                 referencedTableName="users" referencedColumnNames="user_id"/>
-        <addForeignKeyConstraint constraintName="set_member_type_changed_byos_fk"
-                                 baseTableName="order_setmember_type" baseColumnNames="changed_by"
-                                 referencedTableName="users" referencedColumnNames="user_id"/>
-    </changeSet>
-
-
-<!-- DRUG SET MEMBER    DRUG SET MEMBER    DRUG SET MEMBER    DRUG SET MEMBER-->
-
-    <changeSet id="12276988210992004770088yu9tt99999u" author="jecih">
-        <preConditions onFail="MARK_RAN">
-            <not>
-                <tableExists tableName="drug_set_member"/>
-            </not>
-        </preConditions>
-        <comment>Create drug_set_member table</comment>
-        <createTable tableName="drug_set_member">
-            <column defaultValueNumeric="0" name="set_member_id" type="int">
-                <constraints nullable="false" primaryKey="false"/>
-            </column>
-            <column defaultValueNumeric="0" name="drug_id" type="int">
-                <constraints nullable="false"/>
-            </column>
-            <column name="dose" type="double"/>
-            <column name="dose_units" type="int"/>
-            <column name="frequency" type="int"/>
-            <column name="as_needed" type="boolean"/>
-            <column name="quantity" type="double"/>
-            <column name="quantity_units" type="int"/>
-            <column name="as_needed_condition" type="varchar(255)"/>
-            <column name="dosing_type" type="varchar(255)"/>
-            <column name="num_refills" type="int"/>
-            <column name="dosing_instructions" type="text"/>
-            <column name="duration" type="int"/>
-            <column name="duration_units" type="int"/>
-            <column name="route" type="int"/>
-            <column name="brand_name" type="varchar(255)"/>
-            <column name="dispense_as_written" type="boolean"/>
-            <column name="drug_non_coded" type="varchar(255)"/>
-
-        </createTable>
-        <addForeignKeyConstraint constraintName="drug_iddddsmm_fk"
-                                 baseTableName="drug_set_member" baseColumnNames="set_member_id"
-                                 referencedTableName="order_set_member_ext" referencedColumnNames="order_set_member_id"/>
-
-        <addForeignKeyConstraint constraintName="drug_iddd_fk"
-                                 baseTableName="drug_set_member" baseColumnNames="drug_id"
-                                 referencedTableName="drug" referencedColumnNames="drug_id"/>
-
-        <addForeignKeyConstraint constraintName="duration_unitsdd_fk"
-                                 baseTableName="drug_set_member" baseColumnNames="duration_units"
-                                 referencedTableName="concept" referencedColumnNames="concept_id"/>
-
-        <addForeignKeyConstraint constraintName="quantity_unitsdd_fk"
-                                 baseTableName="drug_set_member" baseColumnNames="quantity_units"
-                                 referencedTableName="concept" referencedColumnNames="concept_id"/>
-
-
-        <addForeignKeyConstraint constraintName="routedd_fk"
-                                 baseTableName="drug_set_member" baseColumnNames="route"
-                                 referencedTableName="concept" referencedColumnNames="concept_id"/>
-
-
-        <addForeignKeyConstraint constraintName="dose_unitsdd_fk"
-                                 baseTableName="drug_set_member" baseColumnNames="dose_units"
-                                 referencedTableName="concept" referencedColumnNames="concept_id"/>
-
-        <addForeignKeyConstraint constraintName="frequency_dd_fk"
-                                 baseTableName="drug_set_member" baseColumnNames="frequency"
-                                 referencedTableName="order_frequency" referencedColumnNames="order_frequency_id"/>
-    </changeSet>
-
-
-
-
-
-
-    <!--PROCEDURE TESTS-->
-
-<!--    <changeSet id="387290dd990589989634006d99d984" author="jecihjoy">
-        <preConditions onFail="MARK_RAN">
-            <not>
-                <tableExists tableName="procedure_set_member"/>
-            </not>
-        </preConditions>
-        <comment>Create procedure_tests table</comment>
-        <createTable tableName="procedure_set_member" >
-            <column name="set_member_id" autoIncrement="true" type="int">
-                <constraints nullable="false" primaryKey="true"/>
-            </column>
-            <column name="requires_specimen" type="boolean"/>
-            <column name="specimen_source" type="int" />
-            <column name="number_of_repeats" type="int"/>
-            <column name="laterality" type="varchar(20)"/>
-            <column name="test_notes" type="text"/>
-        </createTable>
-
-        <addForeignKeyConstraint constraintName="procedure_setmember_fk"
-                                 baseTableName="procedure_set_member" baseColumnNames="set_member_id"
-                                 referencedTableName="order_set_member_ext" referencedColumnNames="order_set_member_id"/>
-
-        <addForeignKeyConstraint constraintName="procedure_tests_specimen_source_fk"
-                                 baseTableName="procedure_tests" baseColumnNames="specimen_source"
-                                 referencedTableName="concept" referencedColumnNames="concept_id" />
-    </changeSet>-->
-
     <!--PROCEDURE ORDER-->
 
-    <changeSet id="3099669400000000000000000878" author="jecihjoy">
-        <!--<preConditions onFail="MARK_RAN">
-          &lt;!&ndash;  <not>
+    <changeSet id="order-ext-201777899" author="jecihjoy">
+        <preConditions onFail="MARK_RAN">
+            <not>
                 <tableExists tableName="procedure_order"/>
-            </not>&ndash;&gt;
-        </preConditions>-->
+            </not>
+        </preConditions>
         <comment>Create procedure_order table</comment>
         <createTable tableName="procedure_order" >
             <column name="order_id" autoIncrement="false" type="int">
@@ -308,5 +45,70 @@
                                  referencedTableName="order_frequency" referencedColumnNames="order_frequency_id" />
 
     </changeSet>
+
+    <!--<&#45;&#45;!PRESCRIPTION TEMPLATE&ndash;&gt;-->
+
+    <changeSet id="order-ext-2018889987" author="jecihjoy">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="prescription_templates" />
+            </not>
+        </preConditions>
+        <comment>
+            Create order_set_member table
+        </comment>
+        <createTable tableName="prescription_templates">
+            <column autoIncrement="true" name="template_id" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="concept_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValue="" name="name" type="varchar(255)">
+                <constraints nullable="true"/>
+            </column>
+
+            <column name="order_template" type="text"/>
+            <column name="type" type="int">
+                <constraints nullable="true"/>
+            </column>
+            <column name="order_template_type" type="varchar(1024)"/>
+
+
+            <column defaultValue="" name="version" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueBoolean="false" name="published" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="text"/>
+            <column defaultValueNumeric="0" name="creator" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_created" type="DATETIME">
+                <constraints nullable="false"/>
+            </column>
+            <column name="changed_by" type="int"/>
+            <column name="date_changed" type="DATETIME"/>
+            <column defaultValueBoolean="false" name="retired" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="retired_by" type="int"/>
+            <column name="date_retired" type="DATETIME"/>
+            <column name="retire_reason" type="varchar(255)"/>
+            <column name="uuid" type="char(38)" />
+        </createTable>
+        <addForeignKeyConstraint constraintName="conceptidfk"
+                                 baseTableName="prescription_templates" baseColumnNames="concept_id"
+                                 referencedTableName="concept" referencedColumnNames="concept_id"/>
+        <addForeignKeyConstraint constraintName="prescription_templatesid_fk"
+                                 baseTableName="prescription_templates" baseColumnNames="retired_by"
+                                 referencedTableName="users" referencedColumnNames="user_id"/>
+        <addForeignKeyConstraint constraintName="prescription_templatesddd_fk"
+                                 baseTableName="prescription_templates" baseColumnNames="changed_by"
+                                 referencedTableName="users" referencedColumnNames="user_id"/>
+    </changeSet>
+
+
 
 </databaseChangeLog>

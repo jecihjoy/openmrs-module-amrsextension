@@ -1,11 +1,8 @@
-org/openmrs/module/amrsordermodule/models/OrderSetMemberExt.class
 org/openmrs/module/amrsordermodule/models/ProcedureOrder$Laterality.class
+org/openmrs/module/amrsordermodule/api/services/impl/PrescriptionTemplateServiceImpl.class
+org/openmrs/module/amrsordermodule/models/PrescriptionTemplate.class
+org/openmrs/module/amrsordermodule/api/db/hibernate/HibernatePrescriptionTemplateDao.class
 org/openmrs/module/amrsordermodule/AmrsOrdermoduleActivator.class
-org/openmrs/module/amrsordermodule/models/OrderSetExt.class
-org/openmrs/module/amrsordermodule/models/OrderSetExt$Operator.class
-org/openmrs/module/amrsordermodule/api/services/impl/OrderSetExtServiceImp.class
-org/openmrs/module/amrsordermodule/api/services/OrderSetExtService.class
+org/openmrs/module/amrsordermodule/api/services/PrescriptionTemplateService.class
 org/openmrs/module/amrsordermodule/models/ProcedureOrder.class
 org/openmrs/module/amrsordermodule/api/db/OrderSetExtDao.class
-org/openmrs/module/amrsordermodule/api/db/hibernate/HibernateOrderSetExtDao.class
-org/openmrs/module/amrsordermodule/models/SetMemberType.class
