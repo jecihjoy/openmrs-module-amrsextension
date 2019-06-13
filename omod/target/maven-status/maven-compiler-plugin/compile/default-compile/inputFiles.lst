@@ -1,5 +1,5 @@
-/home/jecihjoy/amrs/openmrs-module-amrsorderextension/omod/src/main/java/org/openmrs/module/amrsordermodule/extension/html/AdminList.java
-/home/jecihjoy/amrs/openmrs-module-amrsorderextension/omod/src/main/java/org/openmrs/module/amrsordermodule/web/resources/OrderResource2_3.java
-/home/jecihjoy/amrs/openmrs-module-amrsorderextension/omod/src/main/java/org/openmrs/module/amrsordermodule/web/resources/PrescriptionTemplateResource.java
-/home/jecihjoy/amrs/openmrs-module-amrsorderextension/omod/src/main/java/org/openmrs/module/amrsordermodule/web/resources/ProcedureOrderSubclassHandler.java
-/home/jecihjoy/amrs/openmrs-module-amrsorderextension/omod/src/main/java/org/openmrs/module/amrsordermodule/web/controller/OrderExtController.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-openmrscustomizations/omod/src/main/java/org/openmrs/module/openmrscustomizations/extension/html/AdminList.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-openmrscustomizations/omod/src/main/java/org/openmrs/module/openmrscustomizations/web/resources/ModuleEncounterResource.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-openmrscustomizations/omod/src/main/java/org/openmrs/module/openmrscustomizations/web/controller/OpenmrsCustomizationsController.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-openmrscustomizations/omod/src/main/java/org/openmrs/module/openmrscustomizations/web/resources/TestEncounterResource.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-openmrscustomizations/omod/src/main/java/org/openmrs/module/openmrscustomizations/web/resources/AppointmentResource1_9.java

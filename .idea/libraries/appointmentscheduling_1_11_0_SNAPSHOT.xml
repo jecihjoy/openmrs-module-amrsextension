@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="appointmentscheduling-1.11.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../openmrs-module-appointmentscheduling/omod/target/appointmentscheduling-1.11.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

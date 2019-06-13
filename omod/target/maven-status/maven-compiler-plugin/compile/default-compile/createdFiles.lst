@@ -1,5 +1,4 @@
-org/openmrs/module/amrsordermodule/extension/html/AdminList.class
-org/openmrs/module/amrsordermodule/web/resources/ProcedureOrderSubclassHandler$1.class
-org/openmrs/module/amrsordermodule/web/resources/PrescriptionTemplateResource.class
-org/openmrs/module/amrsordermodule/web/resources/ProcedureOrderSubclassHandler.class
-org/openmrs/module/amrsordermodule/web/controller/OrderExtController.class
+org/openmrs/module/openmrscustomizations/web/controller/OpenmrsCustomizationsController.class
+org/openmrs/module/openmrscustomizations/web/resources/ModuleEncounterResource.class
+org/openmrs/module/openmrscustomizations/web/resources/TestEncounterResource.class
+org/openmrs/module/openmrscustomizations/extension/html/AdminList.class

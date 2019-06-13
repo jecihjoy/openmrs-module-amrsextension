@@ -20,6 +20,6 @@
   		    http://www.springframework.org/schema/util/spring-util-3.0.xsd">
 
 	<!--<context:component-scan base-package="org.openmrs.module.amrsordermodulee.web.controller" />-->
-	<context:component-scan base-package="org.openmrs.module.amrsordermodule"/>
+	<context:component-scan base-package="org.openmrs.module.openmrscustomizations"/>
 
 </beans>

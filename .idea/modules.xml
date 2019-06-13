@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/amrsordermodule.iml" filepath="$PROJECT_DIR$/amrsordermodule.iml" />
-      <module fileurl="file://$PROJECT_DIR$/api/amrsordermodule-api.iml" filepath="$PROJECT_DIR$/api/amrsordermodule-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/omod/amrsordermodule-omod.iml" filepath="$PROJECT_DIR$/omod/amrsordermodule-omod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openmrscustomizationsmodule.iml" filepath="$PROJECT_DIR$/openmrscustomizationsmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/openmrscustomizationsmodule-api.iml" filepath="$PROJECT_DIR$/api/openmrscustomizationsmodule-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/omod/openmrscustomizationsmodule-omod.iml" filepath="$PROJECT_DIR$/omod/openmrscustomizationsmodule-omod.iml" />
     </modules>
   </component>
 </project>

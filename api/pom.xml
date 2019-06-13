@@ -19,15 +19,21 @@
 			<artifactId>openmrs-api</artifactId>
 			<version>2.1.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>appointmentscheduling-api</artifactId>
+			<version>1.10.0</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 	<parent>
 		<groupId>org.openmrs.module</groupId>
-		<artifactId>amrsordermodule</artifactId>
+		<artifactId>openmrscustomizationsmodule</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>amrsordermodule-api</artifactId>
+	<artifactId>openmrscustomizationsmodule-api</artifactId>
 	<packaging>jar</packaging>
-	<name>amrsordermodule API</name>
-	<description>API project for amrsordermodule</description>
+	<name>openmrscustomizationsmodule API</name>
+	<description>API project for openmrscustomizationsmodule</description>
 </project>

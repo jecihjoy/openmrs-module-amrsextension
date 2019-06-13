@@ -9,10 +9,10 @@
     </parent>
 
 	<groupId>org.openmrs.module</groupId>
-	<artifactId>amrsordermodule</artifactId>
+	<artifactId>openmrscustomizationsmodule</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>amrsordermodule</name>
+	<name>openmrscustomizationsmodule</name>
 	<description></description>
 
 	<modules>
@@ -30,6 +30,12 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>appointmentscheduling</artifactId>
+				<version>1.10.0</version>
+				<scope>provided</scope>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
