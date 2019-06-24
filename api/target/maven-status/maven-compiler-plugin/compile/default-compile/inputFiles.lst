@@ -1,5 +1,4 @@
-/home/jecihjoy/Documents/openmrs-modules/openmrs-module-openmrscustomizations/api/src/main/java/org/openmrs/module/openmrscustomizations/api/services/impl/ModuleEncounterServiceImpl.java
-/home/jecihjoy/Documents/openmrs-modules/openmrs-module-openmrscustomizations/api/src/main/java/org/openmrs/module/openmrscustomizations/models/TestEncounter.java
-/home/jecihjoy/Documents/openmrs-modules/openmrs-module-openmrscustomizations/api/src/main/java/org/openmrs/module/openmrscustomizations/OpenmrsCustomizationsModuleActivator.java
-/home/jecihjoy/Documents/openmrs-modules/openmrs-module-openmrscustomizations/api/src/main/java/org/openmrs/module/openmrscustomizations/api/services/ModuleEncounterService.java
-/home/jecihjoy/Documents/openmrs-modules/openmrs-module-openmrscustomizations/api/src/main/java/org/openmrs/module/openmrscustomizations/models/ModuleEncounter.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/api/src/main/java/org/openmrs/module/amrsextension/api/ModuleEncounterService.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/api/src/main/java/org/openmrs/module/amrsextension/models/ModuleEncounter.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/api/src/main/java/org/openmrs/module/amrsextension/AmrsExtensionModuleActivator.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/api/src/main/java/org/openmrs/module/amrsextension/api/impl/ModuleEncounterServiceImpl.java

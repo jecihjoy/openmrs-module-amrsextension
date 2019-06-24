@@ -1,1 +1,1 @@
-# openmrs-module-openmrscustomizations-
+# openmrs-module-amrsextension-

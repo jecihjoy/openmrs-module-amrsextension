@@ -21,7 +21,7 @@
   		    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
   		    http://www.springframework.org/schema/util
   		    http://www.springframework.org/schema/util/spring-util-3.0.xsd">
-    <context:component-scan base-package="org.openmrs.module.openmrscustomizations"/>
+    <context:component-scan base-package="org.openmrs.module.amrsextension"/>
 
     <bean id="moduleEncounterService" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
         <property name="transactionManager"><ref bean="transactionManager"/></property>
@@ -39,11 +39,11 @@
     <bean parent="serviceContext">
         <property name="moduleService">
             <list>
-                <value>org.openmrs.module.openmrscustomizations.api.ModuleEncounterService</value> <!-- Your service's interface class -->
+                <value>org.openmrs.module.amrsextension.api.ModuleEncounterService</value> <!-- Your service's interface class -->
                 <bean class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
                     <property name="transactionManager"><ref bean="transactionManager"/></property>
                     <property name="target">
-                        <bean class="org.openmrs.module.openmrscustomizations.api.impl.ModuleEncounterServiceImpl"> <!-- Your service's concrete class -->
+                        <bean class="org.openmrs.module.amrsextension.api.impl.ModuleEncounterServiceImpl"> <!-- Your service's concrete class -->
                         </bean>
                     </property>
                     <property name="preInterceptors">

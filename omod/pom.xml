@@ -3,19 +3,19 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.openmrs.module</groupId>
-        <artifactId>openmrscustomizationsmodule</artifactId>
+        <artifactId>amrsextension</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>openmrscustomizationsmodule-omod</artifactId>
+    <artifactId>amrsextension-omod</artifactId>
     <packaging>jar</packaging>
-    <name>openmrscustomizationsmodule OMOD</name>
-    <description>Omod project for amrsordermodule</description>
+    <name>amrsextension OMOD</name>
+    <description>Omod project for amrsextension</description>
 
     <dependencies>
         <dependency>
             <groupId>org.openmrs.module</groupId>
-            <artifactId>openmrscustomizationsmodule-api</artifactId>
+            <artifactId>amrsextension-api</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <dependency>

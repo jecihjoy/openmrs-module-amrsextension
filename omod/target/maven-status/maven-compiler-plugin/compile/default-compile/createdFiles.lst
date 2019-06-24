@@ -1,4 +1,3 @@
-org/openmrs/module/openmrscustomizations/web/controller/OpenmrsCustomizationsController.class
-org/openmrs/module/openmrscustomizations/web/resources/ModuleEncounterResource.class
-org/openmrs/module/openmrscustomizations/web/resources/TestEncounterResource.class
-org/openmrs/module/openmrscustomizations/extension/html/AdminList.class
+org/openmrs/module/amrsextension/web/resources/ModuleEncounterResource.class
+org/openmrs/module/amrsextension/web/controller/AmrsExtensionController.class
+org/openmrs/module/amrsextension/extension/html/AdminList.class

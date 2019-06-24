@@ -28,12 +28,12 @@
 	</dependencies>
 	<parent>
 		<groupId>org.openmrs.module</groupId>
-		<artifactId>openmrscustomizationsmodule</artifactId>
+		<artifactId>amrsextension</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>openmrscustomizationsmodule-api</artifactId>
+	<artifactId>amrsextension-api</artifactId>
 	<packaging>jar</packaging>
-	<name>openmrscustomizationsmodule API</name>
-	<description>API project for openmrscustomizationsmodule</description>
+	<name>amrsextension API</name>
+	<description>API project for amrsextension</description>
 </project>

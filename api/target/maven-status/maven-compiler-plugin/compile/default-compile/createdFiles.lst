@@ -1,5 +1,4 @@
-org/openmrs/module/openmrscustomizations/OpenmrsCustomizationsModuleActivator.class
-org/openmrs/module/openmrscustomizations/api/services/impl/ModuleEncounterServiceImpl.class
-org/openmrs/module/openmrscustomizations/models/TestEncounter.class
-org/openmrs/module/openmrscustomizations/api/services/ModuleEncounterService.class
-org/openmrs/module/openmrscustomizations/models/ModuleEncounter.class
+org/openmrs/module/amrsextension/models/ModuleEncounter.class
+org/openmrs/module/amrsextension/AmrsExtensionModuleActivator.class
+org/openmrs/module/amrsextension/api/ModuleEncounterService.class
+org/openmrs/module/amrsextension/api/impl/ModuleEncounterServiceImpl.class

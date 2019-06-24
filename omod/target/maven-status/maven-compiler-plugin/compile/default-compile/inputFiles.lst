@@ -1,5 +1,3 @@
-/home/jecihjoy/Documents/openmrs-modules/openmrs-module-openmrscustomizations/omod/src/main/java/org/openmrs/module/openmrscustomizations/extension/html/AdminList.java
-/home/jecihjoy/Documents/openmrs-modules/openmrs-module-openmrscustomizations/omod/src/main/java/org/openmrs/module/openmrscustomizations/web/resources/ModuleEncounterResource.java
-/home/jecihjoy/Documents/openmrs-modules/openmrs-module-openmrscustomizations/omod/src/main/java/org/openmrs/module/openmrscustomizations/web/controller/OpenmrsCustomizationsController.java
-/home/jecihjoy/Documents/openmrs-modules/openmrs-module-openmrscustomizations/omod/src/main/java/org/openmrs/module/openmrscustomizations/web/resources/TestEncounterResource.java
-/home/jecihjoy/Documents/openmrs-modules/openmrs-module-openmrscustomizations/omod/src/main/java/org/openmrs/module/openmrscustomizations/web/resources/AppointmentResource1_9.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/omod/src/main/java/org/openmrs/module/amrsextension/web/controller/AmrsExtensionController.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/omod/src/main/java/org/openmrs/module/amrsextension/extension/html/AdminList.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/omod/src/main/java/org/openmrs/module/amrsextension/web/resources/ModuleEncounterResource.java
