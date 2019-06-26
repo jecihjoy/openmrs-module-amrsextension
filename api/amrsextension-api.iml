@@ -92,7 +92,7 @@
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.groovy:groovy-all:2.4.6" level="project" />
     <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache:2.10.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:appointmentscheduling-api:1.10.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:appointmentscheduling-api:1.11.0-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: joda-time:joda-time:2.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.openmrs.api:openmrs-api:tests:1.11.6" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.antlr:antlr-runtime:3.4" level="project" />

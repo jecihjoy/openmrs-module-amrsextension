@@ -1,14 +1,6 @@
 package org.openmrs.module.amrsextension.models;
 
-import org.openmrs.BaseOpenmrsData;
-import org.openmrs.EncounterProvider;
-import org.openmrs.EncounterType;
-import org.openmrs.Form;
-import org.openmrs.Location;
-import org.openmrs.Obs;
-import org.openmrs.Order;
-import org.openmrs.Patient;
-import org.openmrs.Visit;
+import org.openmrs.*;
 import org.openmrs.module.appointmentscheduling.Appointment;
 import org.openmrs.module.appointmentscheduling.AppointmentType;
 import org.openmrs.module.appointmentscheduling.TimeSlot;
@@ -48,6 +40,8 @@ public class ModuleEncounter extends BaseOpenmrsData {
 	private AppointmentType appointmentType;
 	
 	private Date appointmentDate;
+	
+	private Provider appointmentProvider;
 	
 	private Integer appointmentId;
 	
@@ -190,6 +184,14 @@ public class ModuleEncounter extends BaseOpenmrsData {
 	
 	public void setAppointmentDate(Date appointmentDate) {
 		this.appointmentDate = appointmentDate;
+	}
+	
+	public Provider getAppointmentProvider() {
+		return appointmentProvider;
+	}
+	
+	public void setAppointmentProvider(Provider appointmentProvider) {
+		this.appointmentProvider = appointmentProvider;
 	}
 	
 	@Override

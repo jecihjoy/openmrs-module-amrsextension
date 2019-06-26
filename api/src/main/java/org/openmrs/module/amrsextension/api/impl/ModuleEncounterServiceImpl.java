@@ -1,22 +1,22 @@
 package org.openmrs.module.amrsextension.api.impl;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.openmrs.Encounter;
 import org.openmrs.EncounterProvider;
+import org.openmrs.Patient;
 import org.openmrs.api.context.Context;
 import org.openmrs.api.impl.BaseOpenmrsService;
 import org.openmrs.module.amrsextension.models.ModuleEncounter;
 import org.openmrs.module.appointmentscheduling.Appointment;
+import org.openmrs.module.appointmentscheduling.TimeSlot;
 import org.openmrs.module.appointmentscheduling.api.AppointmentService;
 import org.openmrs.module.amrsextension.api.ModuleEncounterService;
+import org.openmrs.validator.ValidateUtil;
 
 public class ModuleEncounterServiceImpl extends BaseOpenmrsService implements ModuleEncounterService {
 	
-	protected final Log log = LogFactory.getLog(this.getClass());
-	
 	@Override
 	public ModuleEncounter saveEncounter(ModuleEncounter mencounter) {
+		AppointmentService service = Context.getService(AppointmentService.class);
 		
 		if (mencounter != null) {
 			
@@ -35,7 +35,7 @@ public class ModuleEncounterServiceImpl extends BaseOpenmrsService implements Mo
 			encounter.setObs(mencounter.getObs());
 			encounter.setOrders(mencounter.getOrders());
 			
-			Appointment appointment = new Appointment(); //cb385ffa-9cf5-4d52-bda6-2d8a4d84e2aa
+			Appointment appointment = new Appointment();
 			if (mencounter.getAppointmentId() != 0) {
 				appointment.setId(mencounter.getAppointmentId());
 			}
@@ -45,6 +45,15 @@ public class ModuleEncounterServiceImpl extends BaseOpenmrsService implements Mo
 			appointment.setVisit(mencounter.getVisit());
 			appointment.setTimeSlot(mencounter.getAppointmentTimeSlot());
 			
+			TimeSlot timeSlot = service.getTimeslotForAppointment(mencounter.getLocation(),
+			    mencounter.getAppointmentProvider(), mencounter.getAppointmentType(), mencounter.getAppointmentDate());
+			if (timeSlot == null) {
+				timeSlot = service.createTimeSlotUsingProviderSchedule(mencounter.getAppointmentDate(),
+				    mencounter.getAppointmentType(), mencounter.getAppointmentProvider(), mencounter.getLocation());
+			}
+			appointment.setTimeSlot(timeSlot);
+			ValidateUtil.validate(appointment);
+			
 			for (EncounterProvider ep : mencounter.getEncounterProviders()) {
 				ep.setEncounter(encounter);
 			}
@@ -53,7 +62,7 @@ public class ModuleEncounterServiceImpl extends BaseOpenmrsService implements Mo
 			if (savedEncounter != null) {
 				Appointment savedAppointment;
 				try {
-					savedAppointment = Context.getService(AppointmentService.class).saveAppointment(appointment);
+					savedAppointment = service.saveAppointment(appointment);
 					return mencounter;
 				}
 				catch (Exception e) {
@@ -65,5 +74,10 @@ public class ModuleEncounterServiceImpl extends BaseOpenmrsService implements Mo
 		}
 		
 		return null;
+	}
+	
+	@Override
+	public Appointment getPatientLastAppointment(Patient patient) {
+		return Context.getService(AppointmentService.class).getLastAppointment(patient);
 	}
 }

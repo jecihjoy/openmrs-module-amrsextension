@@ -1,3 +1,4 @@
 /home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/omod/src/main/java/org/openmrs/module/amrsextension/web/controller/AmrsExtensionController.java
 /home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/omod/src/main/java/org/openmrs/module/amrsextension/extension/html/AdminList.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/omod/src/main/java/org/openmrs/module/amrsextension/web/controller/PatientAppointmentController.java
 /home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/omod/src/main/java/org/openmrs/module/amrsextension/web/resources/ModuleEncounterResource.java

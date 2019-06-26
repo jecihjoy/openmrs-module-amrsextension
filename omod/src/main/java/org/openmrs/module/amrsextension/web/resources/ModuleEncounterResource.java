@@ -114,6 +114,7 @@ public class ModuleEncounterResource extends DataDelegatingCrudResource<ModuleEn
 		description.addRequiredProperty("appointmentType");
 		description.addProperty("appointmentId");
 		description.addProperty("appointmentDate");
+		description.addProperty("appointmentProvider");
 		return description;
 	}
 	
