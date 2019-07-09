@@ -2,36 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b0ec6d3-6ca5-4ae1-b86f-fe44fdfc4e1b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsextension/web/controller/PatientAppointmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_appointmentscheduling_api_1_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_appointmentscheduling_api_1_11_0_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_appointmentscheduling_omod_1_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openmrs_module_appointmentscheduling_omod_1_11_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/ModulePatientDataService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/db/ModuleLabOrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/db/hibernate/HibernateModuleLabOrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/impl/ModulePatientDataServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/models/LabOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsextension/web/resources/LabOrderResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/amrsextension-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/api/amrsextension-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/ModuleEncounterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/ModuleEncounterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/impl/ModuleEncounterServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/impl/ModuleEncounterServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/models/ModuleEncounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/models/ModuleEncounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/amrsextension-api-1.0.0-SNAPSHOT-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/amrsextension-api-1.0.0-SNAPSHOT-tests.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/amrsextension-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/amrsextension-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/amrsextension/api/ModuleEncounterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/amrsextension/api/ModuleEncounterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/amrsextension/api/impl/ModuleEncounterServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/classes/org/openmrs/module/amrsextension/api/impl/ModuleEncounterServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/classes/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/classes/moduleApplicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/target/maven-java-formatter-cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-java-formatter-cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/amrsextension.omod.iml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/amrsextension.omod.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsextension/web/resources/ModuleEncounterResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsextension/web/resources/ModuleEncounterResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/src/main/resources/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/src/main/resources/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/amrsextension-1.0.0-SNAPSHOT-tests.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/amrsextension-1.0.0-SNAPSHOT-tests.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/amrsextension-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/amrsextension-1.0.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/amrsextension-1.0.0-SNAPSHOT.omod" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/amrsextension-1.0.0-SNAPSHOT.omod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/amrsextension-1.0.0-SNAPSHOT/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/amrsextension-1.0.0-SNAPSHOT/config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/amrsextension-1.0.0-SNAPSHOT/lib/amrsextension-api-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/amrsextension-1.0.0-SNAPSHOT/lib/amrsextension-api-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/omod/target/classes/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/amrsextension-1.0.0-SNAPSHOT/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/amrsextension-1.0.0-SNAPSHOT/moduleApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/amrsextension-1.0.0-SNAPSHOT/org/openmrs/module/amrsextension/web/controller/PatientAppointmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/amrsextension-1.0.0-SNAPSHOT/org/openmrs/module/amrsextension/web/controller/PatientAppointmentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/classes/moduleApplicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/moduleApplicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/amrsextension/web/controller/PatientAppointmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/classes/org/openmrs/module/amrsextension/web/controller/PatientAppointmentController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/maven-java-formatter-cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-java-formatter-cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/omod/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/omod/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,40 +45,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/models/ModuleEncounter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1396">
-              <caret line="188" column="46" selection-start-line="188" selection-start-column="46" selection-end-line="188" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="45" column="60" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsextension/web/resources/ModuleEncounterResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1695">
-              <caret line="117" column="26" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
+            <state relative-caret-position="465">
+              <caret line="49" selection-start-line="49" selection-end-line="92" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,43 +57,100 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/impl/ModuleEncounterServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/models/LabOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="330">
+              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3646#3647#0" expanded="true" />
+                <element signature="e#3664#3665#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsextension/web/controller/PatientAppointmentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../openmrs-module-appointmentscheduling/omod/target/appointmentscheduling-1.11.0-SNAPSHOT.jar!/org/openmrs/module/appointmentscheduling/Appointment.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="jar://$PROJECT_DIR$/../openmrs-module-appointmentscheduling/omod/target/appointmentscheduling-1.11.0-SNAPSHOT.jar!/org/openmrs/module/appointmentscheduling/TimeSlot.class">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/db/hibernate/HibernateModuleLabOrderDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="405">
+              <caret line="48" column="120" selection-start-line="48" selection-start-column="120" selection-end-line="48" selection-end-column="120" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#777#778#0" expanded="true" />
+                <element signature="e#820#821#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsextension/web/resources/LabOrderResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="52" column="63" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1774#1775#0" expanded="true" />
+                <element signature="e#1792#1793#0" expanded="true" />
+                <element signature="e#1967#1968#0" expanded="true" />
+                <element signature="e#1985#1986#0" expanded="true" />
+                <element signature="e#2041#2042#0" expanded="true" />
+                <element signature="e#2059#2060#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/ModulePatientDataService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="8" column="41" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/impl/ModulePatientDataServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#890#891#0" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1080">
+              <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omod/src/main/resources/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -134,20 +158,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/ModuleEncounterService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="120">
               <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsextension/web/controller/AmrsExtensionController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="78" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,9 +179,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>procedure_</find>
-      <find>procedure_order</find>
-      <find>Drug</find>
       <find>OrderSet</find>
       <find>sortOrdersBasedOnDateActivatedOrDateStopped</find>
       <find>getUsableDate</find>
@@ -197,6 +206,9 @@
       <find>cust</find>
       <find>appo</find>
       <find>AppointmentService</find>
+      <find>getDisplayString</find>
+      <find>patientDataService</find>
+      <find>displa</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/api/src/main/java/org/openmrs/module/procedureorder/models</dir>
@@ -208,18 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsordermodule/models/SetMemberType.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsordermodule/models/OrderSetMemberExt.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsordermodule/web/resources/DrugSetMemberSubclassHandler.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsordermodule/models/DrugSetMember.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsordermodule/web/resources/OrderSetMemberExtResource.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsordermodule/web/resources/OrderSetExtResource.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsordermodule/web/controller/OrderExtController.java" />
-        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsordermodule/web/resources/OrderResource2_3.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsordermodule/api/db/hibernate/HibernateOrderSetExtDao.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsordermodule/api/services/OrderSetExtService.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsordermodule/api/services/impl/OrderSetExtServiceImp.java" />
-        <option value="$PROJECT_DIR$/api/src/main/resources/ProcedureOrder.hbm.xml" />
         <option value="$PROJECT_DIR$/api/src/main/resources/PrescriptionTemplates.hbm.xml" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsordermodule/models/PrescriptionTemplates.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsordermodule/models/PrescriptionTemplate.java" />
@@ -234,7 +234,6 @@
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/openmrscustomizations/AmrsOrdermoduleActivator.java" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/openmrscustomizations/web/controller/OpenmrsCustomizationsController.java" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/openmrscustomizations/web/resources/ModuleControllerResource.java" />
-        <option value="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/openmrscustomizations/web/resources/AppointmentResource1_9.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/openmrscustomizations/api/services/impl/ModuleEncounterServiceImpl.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/openmrscustomizations/api/services/ModuleEncounterService.java" />
@@ -259,6 +258,19 @@
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/models/ModuleEncounter.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/impl/ModuleEncounterServiceImpl.java" />
         <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsextension/web/controller/PatientAppointmentController.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/models/LabSampleCollected.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/models/OrderSampleCollected.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/db/MOrderDAO.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/db/MouduleLabOrderDAO.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/db/hibernate/HibernateMOrderDAO.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/db/ModuleLabOrderDAO.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/ModulePatientDataService.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/impl/HibernateModulePatientDataService.java" />
+        <option value="$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/models/LabOrder.java" />
+        <option value="$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsextension/web/resources/LabOrderResource.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/impl/ModulePatientDataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/db/hibernate/HibernateModuleLabOrderDAO.java" />
       </list>
     </option>
   </component>
@@ -277,22 +289,12 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Patienttodos" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Patienttodos" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="993" />
+    <option name="x" value="67" />
     <option name="y" value="25" />
     <option name="width" value="927" />
     <option name="height" value="1055" />
@@ -305,7 +307,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -368,6 +369,29 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="amrsextension" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="openmrs-module-amrsextension" type="b2602c69:ProjectViewProjectNode" />
+              <item name="openmrs-module-amrsextension" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="amrsextension" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="openmrs-module-amrsextension" type="b2602c69:ProjectViewProjectNode" />
+              <item name="openmrs-module-amrsextension" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="amrsextension" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -379,6 +403,23 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="amrsextension" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="openmrs-module-amrsextension" type="b2602c69:ProjectViewProjectNode" />
+              <item name="openmrs-module-amrsextension" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="openmrs-module-amrsextension" type="b2602c69:ProjectViewProjectNode" />
+              <item name="openmrs-module-amrsextension" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Resource Bundle 'messages'" type="a6c14932:ResourceBundleNode" />
             </path>
             <path>
               <item name="openmrs-module-amrsextension" type="b2602c69:ProjectViewProjectNode" />
@@ -465,16 +506,11 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="openmrs-module-amrsextension" type="b2602c69:ProjectViewProjectNode" />
-              <item name="openmrs-module-amrsextension" type="462c0819:PsiDirectoryNode" />
-              <item name="omod" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -614,17 +650,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23519646" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="DB Browser" order="7" weight="0.32982844" />
-      <window_info id="Project Explorer" order="8" weight="0.32982844" />
-      <window_info id="Job Explorer" order="9" weight="0.13281682" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24626453" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="DB Browser" order="6" weight="0.32982844" />
+      <window_info id="Project Explorer" order="7" weight="0.32982844" />
+      <window_info id="Job Explorer" order="8" weight="0.13281682" />
+      <window_info id="Structure" order="9" weight="0.24958494" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32829374" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
@@ -634,7 +671,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4969563" visible="true" weight="0.2138229" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4969563" weight="0.2386609" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5030437" side_tool="true" weight="0.2138229" />
       <window_info anchor="bottom" id="DB Execution Console" order="11" />
       <window_info anchor="bottom" id="Console" order="12" />
@@ -693,12 +730,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/2.1.0/openmrs-api-2.1.0-sources.jar!/org/openmrs/OrderSetMember.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/module/webservices.rest-omod-common/2.24.0/webservices.rest-omod-common-2.24.0-sources.jar!/org/openmrs/module/webservices/rest/web/resource/impl/BaseDelegatingResource.java" />
-    <entry file="file://$PROJECT_DIR$/api/src/main/resources/OrderSetExt.hbm.xml" />
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/openmrscustomizations/api/db/hibernate/HibernateOrderSetExtDao.java" />
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/openmrscustomizations/api/services/PrescriptionTemplateService.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/2.1.0/openmrs-api-2.1.0-sources.jar!/org/openmrs/Concept.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/api/openmrs-api/2.1.0/openmrs-api-2.1.0-sources.jar!/org/openmrs/BaseOpenmrsMetadata.java" />
     <entry file="file://$PROJECT_DIR$/api/src/main/resources/PrescriptionTemplate.hbm.xml" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/openmrs/module/webservices.rest-omod-1.10/2.14/webservices.rest-omod-1.10-2.14-sources.jar!/org/openmrs/module/webservices/rest/web/v1_0/resource/openmrs1_10/OrderResource1_10.java" />
@@ -767,25 +798,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/api/amrsextension-api.iml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/amrsextension.iml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -808,13 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/resources/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -824,72 +834,98 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/omod/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="975">
           <caret line="65" column="36" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="675">
           <caret line="45" column="60" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/models/ModuleEncounter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1396">
-          <caret line="188" column="46" selection-start-line="188" selection-start-column="46" selection-end-line="188" selection-end-column="46" />
+        <state relative-caret-position="675">
+          <caret line="53" column="33" selection-start-line="49" selection-start-column="30" selection-end-line="53" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/ModuleEncounterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsextension/web/controller/AmrsExtensionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="78" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/impl/ModuleEncounterServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsextension/web/resources/ModuleEncounterResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1695">
-          <caret line="117" column="26" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1167#1168#0" expanded="true" />
+            <element signature="e#1229#1230#0" expanded="true" />
+            <element signature="e#1278#1279#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
+            <element signature="e#1332#1333#0" expanded="true" />
+            <element signature="e#1377#1378#0" expanded="true" />
+            <element signature="e#1406#1407#0" expanded="true" />
+            <element signature="e#1441#1442#0" expanded="true" />
+            <element signature="e#1463#1464#0" expanded="true" />
+            <element signature="e#1511#1512#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1569#1570#0" expanded="true" />
+            <element signature="e#1587#1588#0" expanded="true" />
+            <element signature="e#1623#1624#0" expanded="true" />
+            <element signature="e#1646#1647#0" expanded="true" />
+            <element signature="e#1691#1692#0" expanded="true" />
+            <element signature="e#1718#1719#0" expanded="true" />
+            <element signature="e#1781#1782#0" expanded="true" />
+            <element signature="e#1822#1823#0" expanded="true" />
+            <element signature="e#1857#1858#0" expanded="true" />
+            <element signature="e#1877#1878#0" expanded="true" />
+            <element signature="e#1923#1924#0" expanded="true" />
+            <element signature="e#1950#1951#0" expanded="true" />
+            <element signature="e#1980#1981#0" expanded="true" />
+            <element signature="e#1997#1998#0" expanded="true" />
+            <element signature="e#2035#2036#0" expanded="true" />
+            <element signature="e#2056#2057#0" expanded="true" />
+            <element signature="e#2085#2086#0" expanded="true" />
+            <element signature="e#2104#2105#0" expanded="true" />
+            <element signature="e#2143#2144#0" expanded="true" />
+            <element signature="e#2168#2169#0" expanded="true" />
+            <element signature="e#2217#2218#0" expanded="true" />
+            <element signature="e#2246#2247#0" expanded="true" />
+            <element signature="e#2315#2316#0" expanded="true" />
+            <element signature="e#2360#2361#0" expanded="true" />
+            <element signature="e#2419#2420#0" expanded="true" />
+            <element signature="e#2451#2452#0" expanded="true" />
+            <element signature="e#2621#2622#0" expanded="true" />
+            <element signature="e#2646#2647#0" expanded="true" />
+            <element signature="e#2699#2700#0" expanded="true" />
+            <element signature="e#2736#2737#0" expanded="true" />
+            <element signature="e#2775#2776#0" expanded="true" />
+            <element signature="e#2802#2803#0" expanded="true" />
+            <element signature="e#2859#2860#0" expanded="true" />
+            <element signature="e#2900#2901#0" expanded="true" />
+            <element signature="e#2946#2947#0" expanded="true" />
+            <element signature="e#2979#2980#0" expanded="true" />
+            <element signature="e#3049#3050#0" expanded="true" />
+            <element signature="e#3102#3103#0" expanded="true" />
+            <element signature="e#3167#3168#0" expanded="true" />
+            <element signature="e#3198#3199#0" expanded="true" />
+            <element signature="e#3376#3377#0" expanded="true" />
+            <element signature="e#3407#3408#0" expanded="true" />
+            <element signature="e#3471#3472#0" expanded="true" />
+            <element signature="e#3520#3521#0" expanded="true" />
+            <element signature="e#3568#3569#0" expanded="true" />
+            <element signature="e#3605#3606#0" expanded="true" />
+            <element signature="e#3780#3781#0" expanded="true" />
+            <element signature="e#3809#3810#0" expanded="true" />
+            <element signature="e#3867#3868#0" expanded="true" />
+            <element signature="e#3912#3913#0" expanded="true" />
+            <element signature="e#3958#3959#0" expanded="true" />
+            <element signature="e#3991#3992#0" expanded="true" />
+            <element signature="e#4061#4062#0" expanded="true" />
+            <element signature="e#4114#4115#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsextension/web/controller/PatientAppointmentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        <state relative-caret-position="135">
+          <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -907,6 +943,139 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsextension/web/controller/AmrsExtensionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="78" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/db/ModuleLabOrderDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/impl/ModuleEncounterServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsextension/web/resources/ModuleEncounterResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="49" selection-start-line="49" selection-end-line="92" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/models/LabOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3646#3647#0" expanded="true" />
+            <element signature="e#3664#3665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/java/org/openmrs/module/amrsextension/web/resources/LabOrderResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="52" column="63" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1774#1775#0" expanded="true" />
+            <element signature="e#1792#1793#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
+            <element signature="e#2041#2042#0" expanded="true" />
+            <element signature="e#2059#2060#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/ModulePatientDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/impl/ModulePatientDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/resources/moduleApplicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" column="42" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/resources/webModuleApplicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omod/src/main/resources/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/ModuleEncounterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/org/openmrs/module/amrsextension/api/db/hibernate/HibernateModuleLabOrderDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="48" column="120" selection-start-line="48" selection-start-column="120" selection-end-line="48" selection-end-column="120" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

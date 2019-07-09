@@ -2,3 +2,4 @@ org/openmrs/module/amrsextension/web/resources/ModuleEncounterResource.class
 org/openmrs/module/amrsextension/web/controller/PatientAppointmentController.class
 org/openmrs/module/amrsextension/web/controller/AmrsExtensionController.class
 org/openmrs/module/amrsextension/extension/html/AdminList.class
+org/openmrs/module/amrsextension/web/resources/LabOrderResource.class

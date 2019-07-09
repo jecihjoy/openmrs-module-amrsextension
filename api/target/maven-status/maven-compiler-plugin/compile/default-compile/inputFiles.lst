@@ -1,3 +1,8 @@
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/api/src/main/java/org/openmrs/module/amrsextension/api/db/hibernate/HibernateModuleLabOrderDAO.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/api/src/main/java/org/openmrs/module/amrsextension/models/LabOrder.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/api/src/main/java/org/openmrs/module/amrsextension/api/impl/ModulePatientDataServiceImpl.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/api/src/main/java/org/openmrs/module/amrsextension/api/db/ModuleLabOrderDAO.java
+/home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/api/src/main/java/org/openmrs/module/amrsextension/api/ModulePatientDataService.java
 /home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/api/src/main/java/org/openmrs/module/amrsextension/api/ModuleEncounterService.java
 /home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/api/src/main/java/org/openmrs/module/amrsextension/models/ModuleEncounter.java
 /home/jecihjoy/Documents/openmrs-modules/openmrs-module-amrsextension/api/src/main/java/org/openmrs/module/amrsextension/AmrsExtensionModuleActivator.java

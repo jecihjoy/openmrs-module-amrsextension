@@ -23,31 +23,19 @@
   		    http://www.springframework.org/schema/util/spring-util-3.0.xsd">
     <context:component-scan base-package="org.openmrs.module.amrsextension"/>
 
-    <bean id="moduleEncounterService" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
-        <property name="transactionManager"><ref bean="transactionManager"/></property>
-        <property name="target">
-            <bean class="org.openmrs.module.appointmentscheduling.reporting.query.service.AppointmentQueryServiceImpl"/>
-        </property>
-        <property name="preInterceptors">
-            <ref bean="serviceInterceptors" />
-        </property>
-        <property name="transactionAttributeSource">
-            <bean class="org.springframework.transaction.annotation.AnnotationTransactionAttributeSource"/>
-        </property>
-    </bean>
-
     <bean parent="serviceContext">
         <property name="moduleService">
             <list>
                 <value>org.openmrs.module.amrsextension.api.ModuleEncounterService</value> <!-- Your service's interface class -->
                 <bean class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
-                    <property name="transactionManager"><ref bean="transactionManager"/></property>
+                    <property name="transactionManager">
+                        <ref bean="transactionManager"/>
+                    </property>
                     <property name="target">
-                        <bean class="org.openmrs.module.amrsextension.api.impl.ModuleEncounterServiceImpl"> <!-- Your service's concrete class -->
-                        </bean>
+                        <bean class="org.openmrs.module.amrsextension.api.impl.ModuleEncounterServiceImpl"/> <!-- Your service's concrete class -->
                     </property>
                     <property name="preInterceptors">
-                        <ref bean="serviceInterceptors" />
+                        <ref bean="serviceInterceptors"/>
                     </property>
                     <property name="transactionAttributeSource">
                         <bean class="org.springframework.transaction.annotation.AnnotationTransactionAttributeSource"/>
@@ -56,5 +44,38 @@
             </list>
         </property>
     </bean>
+
+    <bean parent="serviceContext">
+        <property name="moduleService">
+            <list merge="true">
+                <value>org.openmrs.module.amrsextension.api.ModulePatientDataService</value>
+                <ref bean="patientDataService"></ref>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="patientDataService" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager">
+            <ref bean="transactionManager"/>
+        </property>
+        <property name="target">
+            <bean class="org.openmrs.module.amrsextension.api.impl.ModulePatientDataServiceImpl">
+                <property name="labOrderDAO">
+                    <bean class="org.openmrs.module.amrsextension.api.db.hibernate.HibernateModuleLabOrderDAO">
+                        <property name="sessionFactory">
+                            <ref bean="dbSessionFactory"/>
+                        </property>
+                    </bean>
+                </property>
+            </bean>
+        </property>
+        <property name="preInterceptors">
+            <ref bean="serviceInterceptors"/>
+        </property>
+        <property name="transactionAttributeSource">
+            <bean class="org.springframework.transaction.annotation.AnnotationTransactionAttributeSource"/>
+        </property>
+    </bean>
+
 </beans>
 
