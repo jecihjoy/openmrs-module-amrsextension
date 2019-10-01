@@ -47,9 +47,9 @@ public class ModuleEncounterServiceImpl extends BaseOpenmrsService implements Mo
 			
 			TimeSlot timeSlot = service.getTimeslotForAppointment(mencounter.getLocation(),
 			    mencounter.getAppointmentProvider(), mencounter.getAppointmentType(), mencounter.getAppointmentDate());
-			if (timeSlot == null) {
+			if (timeSlot == null) { //mencounter.getAppointmentType(),
 				timeSlot = service.createTimeSlotUsingProviderSchedule(mencounter.getAppointmentDate(),
-				    mencounter.getAppointmentType(), mencounter.getAppointmentProvider(), mencounter.getLocation());
+				    mencounter.getAppointmentProvider(), mencounter.getLocation());
 			}
 			appointment.setTimeSlot(timeSlot);
 			ValidateUtil.validate(appointment);

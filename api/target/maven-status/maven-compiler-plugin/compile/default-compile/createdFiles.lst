@@ -1,9 +1,9 @@
 org/openmrs/module/amrsextension/models/ModuleEncounter.class
 org/openmrs/module/amrsextension/models/LabOrder.class
-org/openmrs/module/amrsextension/api/ModulePatientDataService.class
 org/openmrs/module/amrsextension/api/impl/ModuleEncounterServiceImpl.class
 org/openmrs/module/amrsextension/api/impl/ModulePatientDataServiceImpl.class
+org/openmrs/module/amrsextension/api/ModulePatientDataService.class
 org/openmrs/module/amrsextension/api/db/hibernate/HibernateModuleLabOrderDAO.class
-org/openmrs/module/amrsextension/AmrsExtensionModuleActivator.class
 org/openmrs/module/amrsextension/api/ModuleEncounterService.class
+org/openmrs/module/amrsextension/AmrsExtensionModuleActivator.class
 org/openmrs/module/amrsextension/api/db/ModuleLabOrderDAO.class
